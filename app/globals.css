@@ -8,6 +8,7 @@
 @layer base {
   html {
     @apply text-white font-trebuchet;
+    @apply scroll-smooth;
   }
 }
 /* START: General styles */
