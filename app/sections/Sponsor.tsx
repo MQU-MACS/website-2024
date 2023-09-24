@@ -27,9 +27,9 @@ export default function Sponsor() {
             <p className="text-primary-black">
               Software is changing the world, and Atlassian is at the center of
               it all. Motivated by honest values, an amazing culture, and
-              consistent revenue growth, we’re out to unleash the potential of
+              consistent revenue growth, we're out to unleash the potential of
               every team. From Amsterdam and Austin to Sydney and San Francisco,
-              we’re looking for people who are powered by passion and eager to
+              we're looking for people who are powered by passion and eager to
               do the best work of their lives in a highly autonomous yet
               collaborative, no B.S. environment.
             </p>
