@@ -11,14 +11,14 @@ export default function Home() {
       <section className="max-container ">
         <Home1 />
       </section>
-      <section className="max-container padding">
+      <section id="sponsor" className="max-container padding">
         <Sponsor />
       </section>
 
-      <section className="max-container">
+      <section id="cta" className="max-container">
         <CTA />
       </section>
-      <section className="">
+      <section id="contact" className="">
         <Contact />
       </section>
     </main>

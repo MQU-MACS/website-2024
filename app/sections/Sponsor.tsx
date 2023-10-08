@@ -1,6 +1,6 @@
 export default function Sponsor() {
   return (
-    <div id="sponsor" className="flex flex-col items-center">
+    <div className="flex flex-col items-center">
       <div className="flex flex-col text-center mb-16">
         <h2 className="text-4xl italic font-bold mb-4">
           Our <span className="text-primary-blue">Sponsors</span>
