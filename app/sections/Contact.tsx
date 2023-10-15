@@ -1,8 +1,8 @@
 export default function Contact() {
   return (
-    <div id="contact" className="relative overflow-hidden">
+    <div className="relative overflow-hidden max-w-[1920px] mx-auto">
       <div className="relative px-8 z-10">
-        <div className="mb-24 py-8 lg:py-8 px-4 rounded-3xl mx-auto max-w-screen-md bg-primary-black border-2 ">
+        <div className="mb-8 py-8 lg:py-8 px-4 rounded-3xl mx-auto max-w-screen-md bg-primary-black border-2 ">
           <h2 className="text-white mb-4 text-4xl italic font-bold text-center">
             Contact <span className="text-primary-blue">Us</span>
           </h2>
@@ -62,7 +62,7 @@ export default function Contact() {
             </div>
           </form>
         </div>
-        <p className="text-center mb-8 bg-primary-black w-fit mx-auto rounded-full p-4">
+        <p className="text-center mb-8 w-fit mx-auto rounded-full p-4">
           © 2023 Macquarie Association of Computing Students
         </p>
       </div>

@@ -9,6 +9,7 @@
   html {
     @apply text-white font-trebuchet;
     @apply scroll-smooth;
+    scroll-padding-top: 5rem;
   }
 }
 /* START: General styles */

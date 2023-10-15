@@ -15,20 +15,17 @@ export default function Home() {
         <Home1 />
       </section>
       <section className="max-container padding">
-        <About></About>
-      </section>
-      <section className="max-container ">
-        <Team />
+        <About />
       </section>
 
-      <section className="max-container ">
+      <section className="max-container padding">
         <Sponsor />
       </section>
 
-      <section className="max-container">
+      <section id="cta" className="max-container">
         <CTA />
       </section>
-      <section className="">
+      <section id="contact" className="">
         <Contact />
       </section>
     </main>

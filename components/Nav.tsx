@@ -15,7 +15,7 @@ export default function Nav() {
         <a href="/">
           <img src="/MACS Logo.png" alt="logo" className="m-0" />
         </a>
-        <ul className="flex-1 flex justify-end items-center gap-16 max-lg:hidden">
+        <ul className="flex-1 flex justify-end items-center gap-16 max-md:hidden">
           {navLinks.map((item) => (
             <li key={item.label}>
               <a
@@ -28,7 +28,7 @@ export default function Nav() {
           ))}
         </ul>
         {/* Hamburger Icon */}
-        <div className="hidden max-lg:block" onClick={toggleNav}>
+        <div className="hidden max-md:block" onClick={toggleNav}>
           <img
             src="/hamburger.svg"
             alt="hamburger icon"
@@ -47,7 +47,7 @@ export default function Nav() {
               <a
                 href={item.href}
                 onClick={toggleNav}
-                className="block text-lg text-white uppercase italic hover:underline px-6 py-2"
+                className="block text-lg text-white uppercase italic hover:underline padding-x py-2"
               >
                 {item.label}
               </a>
