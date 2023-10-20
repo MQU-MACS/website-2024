@@ -6,7 +6,6 @@ import Home1 from "@/app/sections/Home";
 import React from "react";
 import About from "@/app/sections/About";
 import Team from "@/app/sections/Team";
-
 export default function Home() {
   return (
     <main className=" bg-primary-black ">
@@ -17,7 +16,9 @@ export default function Home() {
       <section className="max-container padding">
         <About />
       </section>
-
+      <section className=" max-container padding ">
+        <Team></Team>
+      </section>
       <section className="max-container padding">
         <Sponsor />
       </section>
