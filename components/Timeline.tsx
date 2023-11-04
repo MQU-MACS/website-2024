@@ -14,7 +14,7 @@ const VerticalTabMenu: React.FC = () => {
   const currentData = data[currentYear as keyof typeof data];
 
   return (
-    <div className="grid grid-cols-10">
+    <div className="grid grid-cols-8">
       <div className="bg-white w-1 h-full flex flex-col items-center">
         {years.map((year, index) => (
           <div
@@ -24,7 +24,7 @@ const VerticalTabMenu: React.FC = () => {
             }`}
             onClick={() => handleYearClick(year)}
           >
-            <div className="rounded-full w-12 h-12 text-2xl font-bold flex items-center justify-end pr-12 ">
+            <div className="rounded-full w-12 h-12 text-2xl font-bold flex items-center justify-end  ">
               <span>{year}</span>
             </div>
           </div>
