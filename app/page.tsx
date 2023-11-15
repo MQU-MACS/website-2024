@@ -13,7 +13,7 @@ export default function Home() {
       <section className="  ">
         <Home1 />
       </section>
-      <section className="max-container padding">
+      <section className="">
         <About />
       </section>
       <section className=" max-container padding ">
