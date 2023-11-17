@@ -22,8 +22,8 @@ const ContentSection = () => (
 
 export default function About() {
   return (
-    <div className="relative p-16">
-      <div className="grid grid-rows-2 gap-16 md:hidden">
+    <div className="  max-w-full max-h-full">
+      <div className="grid grid-rows-8 gap-16 md:hidden">
         <div className="row-start-2">
           <Slider slides={slides}></Slider>
         </div>
@@ -32,25 +32,27 @@ export default function About() {
         </div>
       </div>
 
-      <div className="grid grid-cols-2 gap-16 hidden md:grid">
+      <div className=" grid grid-cols-2 gap-16    hidden md:grid ">
         <div className="col-start-1">
           <Slider slides={slides}></Slider>
         </div>
         <div className="col-start-2">
           <ContentSection />
-          <svg
-            width="358"
-            height="787"
-            viewBox="0 0 358 787"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            className="absolute right-0"
-          >
-            <path
-              d="M471.194 0.874109L703.678 786.32L0.517667 290.377L471.194 0.874109Z"
-              fill="#95C5F1"
-            />
-          </svg>
+          {/* <div className="flex">
+            <svg
+              width="358"
+              height="787"
+              viewBox="0 0 358 787"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="absolute right-0  md:visible invisible shrink"
+            >
+              <path
+                d="M471.194 0.874109L703.678 786.32L0.517667 290.377L471.194 0.874109Z"
+                fill="#95C5F1"
+              />
+            </svg>
+          </div> */}
         </div>
       </div>
     </div>
