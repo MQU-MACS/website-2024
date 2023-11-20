@@ -1,73 +1,88 @@
 {
     "2023": [
-      { "name": "Name 1","role":"Role 1", "image": "randomperson.jpg" },
-      { "name": "Name 2", "role":"Role 2","image": "randomperson.jpg" },
-      { "name": "Name 3", "role":"Role 3","image": "randomperson.jpg" },
-      { "name": "Name 4", "role":"Role 4","image": "randomperson.jpg" },
-      { "name": "Name 5", "role":"Role 5","image": "randomperson.jpg" },
-      { "name": "Name 6", "role":"Role 6","image": "randomperson.jpg" },
-      { "name": "Name 7", "role":"Role 7","image": "randomperson.jpg" },
-      { "name": "Name 8", "role":"Role 8","image": "randomperson.jpg" }
+      { "name": "Zahlia Hamer","role":"President", "image": "randomperson.jpg" },
+      { "name": "Kay Mcloughlin", "role":"Vice President","image": "KAY.png" },
+      { "name": "Vincenzo YC Huh", "role":"Secretary","image": "randomperson.jpg" },
+      { "name": "Kabir Acharya", "role":"Treasurer","image": "KABIR.png" },
+      { "name": "Jordan Bertasso", "role":"General Executive","image": "randomperson.jpg" },
+      { "name": "Lucianna Salloum", "role":"General Executive","image": "randomperson.jpg" },
+      { "name": "Cathy Nguyen", "role":"General Executive","image": "randomperson.jpg" },
+      { "name": "Andy", "role":"General Executive","image": "randomperson.jpg" },
+      { "name": "Toast Kangro", "role":"General Executive","image": "randomperson.jpg" }
     ],
     "2022": [
-      { "name": "Name 1","role":"Role 1", "image": "randomperson.jpg" },
-      { "name": "Name 2", "role":"Role 2","image": "randomperson.jpg" },
-      { "name": "Name 3", "role":"Role 3","image": "randomperson.jpg" },
-      { "name": "Name 4", "role":"Role 4","image": "randomperson.jpg" },
-      { "name": "Name 5", "role":"Role 5","image": "randomperson.jpg" },
-      { "name": "Name 6", "role":"Role 6","image": "randomperson.jpg" },
-      { "name": "Name 7", "role":"Role 7","image": "randomperson.jpg" },
-      { "name": "Name 8", "role":"Role 8","image": "randomperson.jpg" }
+      { "name": "Jordan Bertasso","role":"President", "image": "randomperson.jpg" },
+      { "name": "Lucianna Salloum", "role":"Vice President","image": "randomperson.jpg" },
+      { "name": "David Sanders", "role":"Secretary","image": "randomperson.jpg" },
+      { "name": "Liam Strang", "role":"Treasurer","image": "randomperson.jpg" },
+      { "name": "Michael Parker", "role":"Computing Representative","image": "randomperson.jpg" },
+      { "name": "Jesse Nguyen", "role":"Cyber Security Representative","image": "randomperson.jpg" },
+      { "name": "Dominic Hartman ", "role":"General Executive","image": "randomperson.jpg" },
+      { "name": "Zahlia Hamer", "role":"General Executive","image": "randomperson.jpg" }
     ],
-    "2021": [
-      { "name": "Name 1","role":"Role 1", "image": "image1.jpg" },
-      { "name": "Name 2", "role":"Role 2","image": "image2.jpg" },
-      { "name": "Name 3", "role":"Role 3","image": "image3.jpg" },
-      { "name": "Name 4", "role":"Role 4","image": "image3.jpg" },
-      { "name": "Name 5", "role":"Role 5","image": "image3.jpg" },
-      { "name": "Name 6", "role":"Role 6","image": "image3.jpg" },
-      { "name": "Name 7", "role":"Role 7","image": "image3.jpg" },
-      { "name": "Name 8", "role":"Role 8","image": "image3.jpg" }
+    "2021 S2": [
+      { "name": "Jordan Bertasso","role":"President", "image": "randomperson.jpg" },
+      { "name": "Lucianna Salloum", "role":"Vice President","image": "randomperson.jpg" },
+      { "name": "David Sanders", "role":"Secretary","image": "randomperson.jpg" },
+      { "name": "Nataly Falero", "role":"Treasurer","image": "randomperson.jpg" },
+      { "name": "Michael Parker", "role":"Computing Representative","image": "randomperson.jpg" },
+      { "name": "Jesse Nguyen", "role":"Cyber Security Representative","image": "randomperson.jpg" },
+      { "name": "Liam Strang ", "role":"General Executive","image": "randomperson.jpg" }
+    
     ],
+    "2021 S1": [
+      { "name": "Jordan Bertasso","role":"President", "image": "randomperson.jpg" },
+      { "name": " Alex Taylor", "role":"Vice President","image": "randomperson.jpg" },
+      { "name": "Lucianna Salloum", "role":"Secretary","image": "randomperson.jpg" },
+      { "name": "Nataly Falero", "role":"Treasurer","image": "randomperson.jpg" },
+      { "name": "Michael Parker", "role":"Computing Representative","image": "randomperson.jpg" },
+      { "name": "Elise McCabe","role":"Postgraduate Representative", "image": "randomperson.jpg" },
+      { "name": "Jesse Nguyen", "role":"Cyber Security Representative","image": "randomperson.jpg" },
+      { "name": "Jack Moore", "role":"General Executive","image": "randomperson.jpg" },
+      { "name": "Liam Strang ", "role":"General Executive","image": "randomperson.jpg" }
+  
+    ],
+    
     "2020": [
-      { "name": "Name 1","role":"Role 1", "image": "image1.jpg" },
-      { "name": "Name 2", "role":"Role 2","image": "image2.jpg" },
-      { "name": "Name 3", "role":"Role 3","image": "image3.jpg" },
-      { "name": "Name 4", "role":"Role 4","image": "image3.jpg" },
-      { "name": "Name 5", "role":"Role 5","image": "image3.jpg" },
-      { "name": "Name 6", "role":"Role 6","image": "image3.jpg" },
-      { "name": "Name 7", "role":"Role 7","image": "image3.jpg" },
-      { "name": "Name 8", "role":"Role 8","image": "image3.jpg" }
+      { "name": "Jordan Bertasso","role":"President", "image": "randomperson.jpg" },
+      { "name": " Alex Taylor", "role":"Vice President","image": "randomperson.jpg" },
+      { "name": "Lin Xie", "role":"Secretary","image": "randomperson.jpg" },
+      { "name": "Himadri Sagar", "role":"Treasurer","image": "randomperson.jpg" },
+      { "name": "Dai Nguyen", "role":"Event & Social Media Coordinator","image": "randomperson.jpg" },
+      { "name": "Jack Moore", "role":"Event & Social Media Coordinator","image": "randomperson.jpg" },
+      { "name": "Mitchell Whyte ", "role":"Event & Social Media Coordinator","image": "randomperson.jpg" }
+  
       ],
       "2019": [
-        { "name": "Name 1","role":"Role 1", "image": "image1.jpg" },
-        { "name": "Name 2", "role":"Role 2","image": "image2.jpg" },
-        { "name": "Name 3", "role":"Role 3","image": "image3.jpg" },
-        { "name": "Name 4", "role":"Role 4","image": "image3.jpg" },
-        { "name": "Name 5", "role":"Role 5","image": "image3.jpg" },
-        { "name": "Name 6", "role":"Role 6","image": "image3.jpg" },
-        { "name": "Name 7", "role":"Role 7","image": "image3.jpg" },
-        { "name": "Name 8", "role":"Role 8","image": "image3.jpg" }
+        { "name": "Jordan Bertasso","role":"President", "image": "randomperson.jpg" },
+        { "name": "Alex Grbic", "role":"Secretary","image": "randomperson.jpg" },
+        { "name": "Arvin Han", "role":"Treasurer","image": "randomperson.jpg" },
+        { "name": "Lin Xie", "role":"Social Media Coordinator","image": "randomperson.jpg" },
+        { "name": "Jack Moore", "role":"Social Media Coordinator","image": "randomperson.jpg" },
+        { "name": "Dai Nguyen", "role":"General Executive","image": "randomperson.jpg" }
+      
       ],
       "2018": [
-        { "name": "Name 1","role":"Role 1", "image": "image1.jpg" },
-        { "name": "Name 2", "role":"Role 2","image": "image2.jpg" },
-        { "name": "Name 3", "role":"Role 3","image": "image3.jpg" },
-        { "name": "Name 4", "role":"Role 4","image": "image3.jpg" },
-        { "name": "Name 5", "role":"Role 5","image": "image3.jpg" },
-        { "name": "Name 6", "role":"Role 6","image": "image3.jpg" },
-        { "name": "Name 7", "role":"Role 7","image": "image3.jpg" },
-        { "name": "Name 8", "role":"Role 8","image": "image3.jpg" }
+        { "name": "Amita Trikam","role":"President", "image": "randomperson.jpg" },
+        { "name": "Matthew Yeatman", "role":"Secretary","image": "randomperson.jpg" },
+        { "name": "Josh Spencer", "role":"Treasurer","image": "randomperson.jpg" },
+        { "name": "Matt Cabanag", "role":"Faculty Liaison","image": "randomperson.jpg" },
+        { "name": "Michael Bauer", "role":"Head of Tutoring","image": "randomperson.jpg" },
+        { "name": "Anthony Heng", "role":"Planning Team","image": "randomperson.jpg" },
+        { "name": "Jason Ros", "role":"Planning Team","image": "randomperson.jpg" },
+        { "name": "Lin Xie", "role":"Planning Team","image": "randomperson.jpg" },
+        { "name": "Emel Unsal", "role":"General Executive","image": "randomperson.jpg" }
+      
       ],
       "2017": [
-        { "name": "Name 1","role":"Role 1", "image": "image1.jpg" },
-        { "name": "Name 2", "role":"Role 2","image": "image2.jpg" },
-        { "name": "Name 3", "role":"Role 3","image": "image3.jpg" },
-        { "name": "Name 4", "role":"Role 4","image": "image3.jpg" },
-        { "name": "Name 5", "role":"Role 5","image": "image3.jpg" },
-        { "name": "Name 6", "role":"Role 6","image": "image3.jpg" },
-        { "name": "Name 7", "role":"Role 7","image": "image3.jpg" },
-        { "name": "Name 8", "role":"Role 8","image": "image3.jpg" }
+        { "name": "Amita Trikam","role":"Cofounding Team Member", "image": "randomperson.jpg" },
+        { "name": "Linton Ball", "role":"Cofounding Team Member","image": "randomperson.jpg" },
+        { "name": "Matt Cabanag", "role":"Cofounding Team Member","image": "randomperson.jpg" },
+        { "name": "Josh Spencer", "role":"Cofounding Team Member","image": "randomperson.jpg" },
+        { "name": "Aaron Takizad", "role":"Cofounding Team Member","image": "randomperson.jpg" },
+        { "name": "Michael Bauer", "role":"Cofounding Team Member","image": "randomperson.jpg" },
+        { "name": "Matthew Yeatman", "role":"Cofounding Team Member","image": "randomperson.jpg" }
+      
       ]
      
 

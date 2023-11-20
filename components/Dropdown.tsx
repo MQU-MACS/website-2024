@@ -2,10 +2,19 @@
 import React, { useState, ChangeEvent } from "react";
 import data from "./data.json";
 
-export default function DropdownComponent() {
-  const [selectedYear, setSelectedYear] = useState("2023"); // Set an initial year
+const years = [
+  "2023",
+  "2022",
+  "2021 S2",
+  "2021 S1",
+  "2020",
+  "2019",
+  "2018",
+  "2017",
+];
 
-  // Function to handle the year selection
+export default function DropdownComponent() {
+  const [selectedYear, setSelectedYear] = useState("2023");
   const handleYearChange = (e: ChangeEvent<HTMLSelectElement>) => {
     setSelectedYear(e.target.value);
   };
@@ -19,7 +28,7 @@ export default function DropdownComponent() {
         value={selectedYear}
         onChange={handleYearChange}
       >
-        {Object.keys(data).map((year) => (
+        {years.map((year) => (
           <option key={year} value={year}>
             {year}
           </option>
@@ -35,7 +44,7 @@ export default function DropdownComponent() {
                   alt={`Image ${index}`}
                   className="rounded "
                 />
-                <p>Name: {item.name}</p>
+                <p className="font-bold">Name: {item.name}</p>
                 <p>Role: {item.role}</p>
               </div>
             ))}

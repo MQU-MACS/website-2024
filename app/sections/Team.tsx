@@ -11,6 +11,10 @@ export default function Team() {
       </div>
       <div className="sm:hidden">
         <DropdownComponent></DropdownComponent>
+        <p className="text-white text-center">
+          If you are interested in getting involved, please talk to any of our
+          friendly executives.
+        </p>
       </div>
     </div>
   );
