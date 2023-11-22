@@ -33,12 +33,10 @@ export default function Home() {
             </div>
           </div>
           <svg
-            width="546"
-            height="292"
             viewBox="0 0 546 292"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="absolute left-0 bottom-0 md:visible invisible "
+            className="absolute left-0 bottom-0 w-1/3 md:visible invisible "
           >
             <path d="M-193 0L-153.358 292H546L-193 0Z" fill="#95C5F1" />
           </svg>
