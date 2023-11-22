@@ -27,7 +27,7 @@ const VerticalTabMenu: React.FC = () => {
   return (
     <div className="grid grid-cols-8 p-16">
       <div className="col-start-1 bg-white w-1 h-full flex flex-col items-center ">
-        <div className="flex flex-col justify-between h-full items-start">
+        <div className="gap-8 flex flex-col justify-between h-full items-start">
           {years.map((year, index) => (
             <div
               key={index}
@@ -46,21 +46,20 @@ const VerticalTabMenu: React.FC = () => {
         </div>
       </div>
 
-      <div className="col-start-2 col-span-7 max-w-full flex justify-center  ">
-        <div className="bg-white w-full h-full rounded p-4  ">
-          <div className="grid grid-rows-${numRows} grid-cols-4 gap-8  ">
+      <div className="col-start-2 col-span-7 max-w-full grid-rows-2  ">
+        <div className=" w-full h-full rounded   ">
+          <div className="row-start-1 gap-8 grid grid-rows-${numRows} grid-cols-4 ">
             {currentData.map((item, index) => (
-              <div
-                key={index}
-                className="text-center flex flex-col items-center justify-stretch"
-              >
-                <img src={item.image} alt={item.name} className="rounded " />
-                <div className="text-black font-bold">{item.name}</div>
-                <div className="text-black">{item.role}</div>
+              <div key={index} className="text-center ">
+                <img src={item.image} className="rounded-full " />
+                <div className="text-2xl text-primary-blue font-bold">
+                  {item.name}
+                </div>
+                <div className=" text-2xl text-white">{item.role}</div>
               </div>
             ))}
           </div>
-          <p className="text-black text-center">
+          <p className="text-white text-2xl text-center py-8">
             If you are interested in getting involved, please talk to any of our
             friendly executives.
           </p>
