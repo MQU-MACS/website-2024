@@ -29,13 +29,17 @@ export default function Carousel({ slides }: CarouselProps) {
         {slides.map((s, index) => {
           return (
             <div key={index} style={{ width: `${100 / slides.length}%` }}>
-              <img src={s} alt={`slide-${index}`} className="w-full h-full" />
+              <img
+                src={s}
+                alt={`slide-${index}`}
+                className="w-full h-full rounded-2xl object-cover"
+              />
             </div>
           );
         })}
       </div>
 
-      <div className="relative bottom-0 py-0 flex justify-center gap-8 w-full">
+      <div className="relative bottom-0 pt-6 flex justify-center gap-8 w-full">
         {slides.map((_, i) => {
           return (
             <div
@@ -43,7 +47,7 @@ export default function Carousel({ slides }: CarouselProps) {
                 setCurrent(i);
               }}
               key={"circle" + i}
-              className={`rounded-full w-5 h-5 cursor-pointer  ${
+              className={`rounded-full w-3 h-3 cursor-pointer  ${
                 i === current ? "bg-white" : "bg-gray-500"
               }`}
             ></div>

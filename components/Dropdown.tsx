@@ -24,7 +24,7 @@ export default function DropdownComponent() {
   return (
     <div className="w-full flex flex-col items-center py-16 relative">
       <select
-        className=" w-1/4 text-center text-primary-black bg-white rounded-full   "
+        className=" w-28 h-10 text-lg text-center text-primary-black bg-white rounded-full"
         value={selectedYear}
         onChange={handleYearChange}
       >

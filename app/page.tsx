@@ -10,20 +10,20 @@ export default function Home() {
   return (
     <main className=" bg-primary-black ">
       <Nav />
-      <section className="  ">
+      <section className="">
         <Home1 />
       </section>
-      <section className="max-container padding">
+      <section id="about" className="padding">
         <About />
       </section>
-      <section className=" max-container padding ">
+      <section id="team" className=" max-container padding ">
         <Team></Team>
       </section>
-      <section className="max-container padding">
+      <section id="sponsor" className="max-container padding">
         <Sponsor />
       </section>
 
-      <section id="cta" className="max-container">
+      <section id="cta" className="">
         <CTA />
       </section>
       <section id="contact" className="">

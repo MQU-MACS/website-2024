@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Sponsor() {
   return (
     <div className="flex flex-col items-center">
@@ -58,9 +60,12 @@ export default function Sponsor() {
           </div>
         </div>
       </div>
-      <button className="mt-12 w-fit center bg-transparent hover:bg-black hover:text-white py-2 px-7 border border-white rounded-full italic">
+      <Link
+        href="mailto:macs.exec@gmail.com"
+        className="text-lg mt-12 w-fit center bg-transparent hover:bg-black hover:text-white py-2 px-7 border border-white rounded-full italic"
+      >
         Become a <span className="text-primary-blue">Sponsor</span>
-      </button>
+      </Link>
       <p className="mt-4 text-sm italic font-light">
         Or contact us at macs.exec@gmail.com
       </p>

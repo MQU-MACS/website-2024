@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <div className="relative overflow-hidden max-w-[1920px] mx-auto">
+    <div className="relative overflow-hidden mx-auto">
       <div className="relative px-8 z-10">
         <div className="mb-8 py-8 lg:py-8 px-4 rounded-3xl mx-auto max-w-screen-md bg-primary-black border-2 ">
           <h2 className="text-white mb-4 text-4xl italic font-bold text-center">
@@ -57,7 +57,7 @@ export default function Contact() {
             </div>
             <div className="mx-auto text-center">
               <button className="w-fit center bg-transparent hover:bg-black hover:text-white py-2 px-7 border border-white rounded-full italic">
-                Submit 👌
+                Submit
               </button>
             </div>
           </form>

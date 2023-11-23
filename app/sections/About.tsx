@@ -4,10 +4,10 @@ import imagesData from "@/components/images.json";
 
 const ContentSection = () => (
   <div>
-    <h2 className="text-4xl italic font-bold mb-4">
+    <h2 className="text-4xl italic font-bold mb-8">
       Welcome to <span className="text-primary-blue">MACS</span>
     </h2>
-    <p className="text-2xl text-white mb-8">
+    <p className="text-2xl text-white mb-4">
       MACS is a student-run association founded in 2017 by computing students,
       for computing students.
     </p>
@@ -21,7 +21,7 @@ const ContentSection = () => (
 
 export default function About() {
   return (
-    <div className="  max-w-full max-h-full">
+    <div className="max-w-full max-h-full max-container">
       <div className="grid grid-rows-8 gap-16 md:hidden">
         <div className="row-start-2">
           <Slider slides={imagesData}></Slider>

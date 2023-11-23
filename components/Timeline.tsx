@@ -26,19 +26,19 @@ const VerticalTabMenu: React.FC = () => {
 
   return (
     <div className="grid grid-cols-8 p-16">
-      <div className="col-start-1 bg-white w-1 h-full flex flex-col items-center ">
-        <div className="gap-8 flex flex-col justify-between h-full items-start">
+      <div className="col-start-1 bg-white w-1 h-max  flex flex-col items-center rounded">
+        <div className="gap-8 flex flex-col justify-between  items-start">
           {years.map((year, index) => (
             <div
               key={index}
               className={`cursor-pointer flex justify-center items-center ${
                 currentYear === year
-                  ? "rounded-full w-12 h-12 bg-white text-6xl font-bold "
+                  ? "rounded-full w-10 h-10 bg-white text-6xl font-bold "
                   : ""
               }`}
               onClick={() => handleYearClick(year)}
             >
-              <div className="rounded-full w-12 h-12 text-2xl  flex items-center justify-end">
+              <div className="rounded-full w-10 h-10 text-2xl flex items-center justify-end">
                 <span className="mr-16">{year}</span>
               </div>
             </div>
@@ -59,7 +59,7 @@ const VerticalTabMenu: React.FC = () => {
               </div>
             ))}
           </div>
-          <p className="text-white text-2xl text-center py-8">
+          <p className="text-white text-base text-center pt-8">
             If you are interested in getting involved, please talk to any of our
             friendly executives.
           </p>
