@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 interface CarouselProps {
-  slides: string[];
+  slides: { src: string; alt: string }[];
 }
 
 export default function Carousel({ slides }: CarouselProps) {
@@ -26,12 +26,12 @@ export default function Carousel({ slides }: CarouselProps) {
           width: `${slides.length * 100}%`,
         }}
       >
-        {slides.map((s, index) => {
+        {slides.map((slide, index) => {
           return (
             <div key={index} style={{ width: `${100 / slides.length}%` }}>
               <img
-                src={s}
-                alt={`slide-${index}`}
+                src={slide.src}
+                alt={slide.alt}
                 className="w-full h-full rounded-2xl object-cover"
               />
             </div>

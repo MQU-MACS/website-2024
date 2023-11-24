@@ -14,7 +14,7 @@ export default function Nav() {
     <header className="padding-x fixed z-20 w-full bg-[#12151E]">
       <nav className="flex justify-between items-center max-container h-20">
         <a href="/">
-          <img src="/MACS Logo.png" alt="logo" className="m-0" />
+          <img src="/MACS Logo.webp" alt="logo" className="m-0" />
         </a>
         <ul className="flex-1 flex justify-end items-center gap-16 max-lg:hidden">
           {navLinks.map((item) => (

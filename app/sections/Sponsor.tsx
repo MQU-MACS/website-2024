@@ -18,7 +18,7 @@ export default function Sponsor() {
           <div className="absolute inset-0 bg-primary-blue transform translate-x-[-1rem] translate-y-[-1rem] md:translate-x-[-2rem] md:translate-y-[-2rem] rounded-xl "></div>
           <div className="relative flex flex-col items-center bg-white p-8 rounded-xl pb-16 z-10">
             <img
-              src="/Atlassian Logo.png"
+              src="/Atlassian Logo.webp"
               className="
               h-40
               w-full
@@ -42,7 +42,7 @@ export default function Sponsor() {
           <div className="absolute inset-0 bg-primary-blue transform translate-x-[1rem] -translate-y-[-1rem] md:translate-x-[2rem] md:-translate-y-[-2rem] rounded-xl"></div>
           <div className="relative flex flex-col items-center h-full bg-white p-8 rounded-xl pb-16 z-10">
             <img
-              src="/Macquarie Bank Logo.png"
+              src="/Macquarie Bank Logo.webp"
               className="
             h-40
             w-full

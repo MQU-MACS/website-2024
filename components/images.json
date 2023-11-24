@@ -1,11 +1,10 @@
 
 
- [
-  "FSE_S1.jpg",
-  "WomeninCyberWorks.jpg",
-  "Chatgptpres.jpg",
-  "IndustryPanel.jpg",
-  "Atlassiantour.jpg",
-  "Astronomynight.jpg"
-  
+[
+  { "src": "FSE_S1.jpg", "alt": "" },
+  { "src": "WomeninCyberWorks.jpg", "alt": "Cyber Works group photo" },
+  { "src": "Chatgptpres.jpg", "alt": "ChatGPT presentation" },
+  { "src": "IndustryPanel.jpg", "alt": "Industry Panel Discussion" },
+  { "src": "Atlassiantour.jpg", "alt": "Atlassian Tour" },
+  { "src": "Astronomynight.jpg", "alt": "Astronomy Night Session" }
 ]

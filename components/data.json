@@ -1,14 +1,14 @@
 {
     "2023": [
-      { "name": "","role":"", "image": "ZAHLIA.png" },
-      { "name": "", "role":"","image": "KAY.png" },
-      { "name": "", "role":"","image": "KABIR.png" },
-      { "name": "", "role":"","image": "IZRID.png" },
-      { "name": "", "role":"","image": "KESH.png" },
-      { "name": "", "role":"","image": "MARK.png" },
-      { "name": "", "role":"","image": "PARTH.png" },
-      { "name": "", "role":"","image": "CALEB.png" },
-      { "name": "", "role":"","image": "TOAST.png" }
+      { "name": "","role":"", "image": "ZAHLIA.webp" },
+      { "name": "", "role":"","image": "KAY.webp" },
+      { "name": "", "role":"","image": "KABIR.webp" },
+      { "name": "", "role":"","image": "IZRID.webp" },
+      { "name": "", "role":"","image": "KESH.webp" },
+      { "name": "", "role":"","image": "MARK.webp" },
+      { "name": "", "role":"","image": "PARTH.webp" },
+      { "name": "", "role":"","image": "CALEB.webp" },
+      { "name": "", "role":"","image": "TOAST.webp" }
     ],
     "2022": [
       { "name": "Jordan Bertasso","role":"President", "image": "" },
