@@ -34,7 +34,7 @@ export default function CTA() {
           </div>
         </div>
 
-        <div className="padding-x py-48">
+        <div className="animate-marquee5 padding-x py-48">
           <h2 className="text-4xl italic font-bold mb-4">
             Become one of our <span className="text-primary-blue">6.000+</span>{" "}
             members!
@@ -46,7 +46,7 @@ export default function CTA() {
           </p>
           <Link
             href="https://discord.gg/macs"
-            className="text-lg col-start-2 w-fit center bg-primary-blue ease-in hover:-translate-y-1 hover:scale-110 hover:bg-blue-200 hover:text-white py-2 px-7 border border-white rounded-full italic inline-flex items-center "
+            className="text-lg col-start-2 w-fit center bg-primary-blue ease-in  hover:bg-blue-200 hover:text-white py-2 px-7 border border-white rounded-full italic inline-flex items-center "
           >
             <span className="mr-2 text-primary-black ">Join Now</span>
             <svg

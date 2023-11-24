@@ -46,7 +46,7 @@ const VerticalTabMenu: React.FC = () => {
         </div>
       </div>
 
-      <div className="col-start-2 col-span-7 max-w-full grid-rows-2  ">
+      <div className="animate-marquee3 col-start-2 col-span-7 max-w-full grid-rows-2  ">
         <div className=" w-full h-full rounded   ">
           <div className="row-start-1 gap-8 grid grid-rows-${numRows} grid-cols-4 ">
             {currentData.map((item, index) => (

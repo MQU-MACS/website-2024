@@ -4,14 +4,14 @@ import imagesData from "@/components/images.json";
 
 const ContentSection = () => (
   <div>
-    <h2 className="text-4xl italic font-bold mb-8">
+    <h2 className="animate-marquee3 text-4xl italic font-bold mb-8">
       Welcome to <span className="text-primary-blue">MACS</span>
     </h2>
-    <p className="text-2xl text-white mb-4">
+    <p className="animate-marquee3 text-2xl text-white mb-4">
       MACS is a student-run association founded in 2017 by computing students,
       for computing students.
     </p>
-    <p className="text-2xl text-white">
+    <p className="animate-marquee3 text-2xl text-white">
       We strive to help Macquarie University computing and IT students up-skill
       and improve their career prospects via networking, computing workshops,
       hackathons, and other various computing events.
@@ -22,7 +22,7 @@ const ContentSection = () => (
 export default function About() {
   return (
     <div className="max-w-full max-h-full max-container">
-      <div className="grid grid-rows-8 gap-16 md:hidden">
+      <div className="   grid grid-rows-8 gap-16 md:hidden">
         <div className="row-start-2">
           <Slider slides={imagesData}></Slider>
         </div>
@@ -32,11 +32,13 @@ export default function About() {
       </div>
 
       <div className=" grid-cols-2  gap-16  hidden md:grid ">
-        <div className="col-start-1">
+        <div className=" animate-marquee4 col-start-1">
           <Slider slides={imagesData}></Slider>
         </div>
-        <div className="col-start-2">
-          <ContentSection />
+        <div className=" col-start-2">
+          <div className="animate-marquee3">
+            <ContentSection />
+          </div>
           <svg
             viewBox="0 0 358 787"
             fill="none"

@@ -20,7 +20,7 @@ export default function Carousel({ slides }: CarouselProps) {
   return (
     <div className="overflow-hidden relative">
       <div
-        className={`flex ease-in animate-pulse transition  duration-1000 `}
+        className={`flex ease-in  transition  duration-1000 `}
         style={{
           transform: `translateX(-${current * (100 / slides.length)}%)`,
           width: `${slides.length * 100}%`,

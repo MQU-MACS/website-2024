@@ -56,7 +56,7 @@ export default function Contact() {
               ></textarea>
             </div>
             <div className="mx-auto text-center">
-              <button className="w-fit center bg-transparent hover:bg-black hover:text-white hover:-translate-y-1 hover:scale-110 py-2 px-7 border border-white rounded-full italic">
+              <button className="w-fit center bg-transparent hover:bg-black hover:text-white  py-2 px-7 border border-white rounded-full italic">
                 Submit
               </button>
             </div>
