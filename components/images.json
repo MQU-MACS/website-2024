@@ -1,10 +1,10 @@
 
 
 [
-  { "src": "FSE_S1.jpg", "alt": "" },
-  { "src": "WomeninCyberWorks.jpg", "alt": "Cyber Works group photo" },
-  { "src": "Chatgptpres.jpg", "alt": "ChatGPT presentation" },
-  { "src": "IndustryPanel.jpg", "alt": "Industry Panel Discussion" },
-  { "src": "Atlassiantour.jpg", "alt": "Atlassian Tour" },
-  { "src": "Astronomynight.jpg", "alt": "Astronomy Night Session" }
+  { "src": "FSE_S1.webp", "alt": "" },
+  { "src": "WomeninCyberWorks.webp", "alt": "Cyber Works group photo" },
+  { "src": "Chatgptpres.webp", "alt": "ChatGPT presentation" },
+  { "src": "IndustryPanel.webp", "alt": "Industry Panel Discussion" },
+  { "src": "Atlassiantour.webp", "alt": "Atlassian Tour" },
+  { "src": "Astronomynight.webp", "alt": "Astronomy Night Session" }
 ]

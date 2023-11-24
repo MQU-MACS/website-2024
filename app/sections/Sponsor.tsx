@@ -62,7 +62,7 @@ export default function Sponsor() {
       </div>
       <Link
         href="mailto:macs.exec@gmail.com"
-        className="text-lg mt-12 w-fit center bg-transparent hover:bg-black hover:text-white py-2 px-7 border border-white rounded-full italic"
+        className="ease-in hover:-translate-y-1 hover:scale-110 text-lg mt-12 w-fit center bg-transparent hover:bg-black hover:text-white  py-2 px-7 border border-white rounded-full italic"
       >
         Become a <span className="text-primary-blue">Sponsor</span>
       </Link>

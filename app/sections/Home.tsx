@@ -25,13 +25,13 @@ export default function Home() {
             <div className="flex gap-4">
               <button
                 onClick={scrollToAbout}
-                className="text-lg col-start-1 w-fit center  hover:bg-blue-200 hover:text-white py-2 px-7 border border-white rounded-full italic inline-flex items-center"
+                className="text-lg col-start-1 w-fit center  hover:bg-black hover:text-white py-2 px-7 border border-white rounded-full italic inline-flex items-center ease-in ease-in hover:-translate-y-1 hover:scale-110"
               >
                 About&nbsp; <span className="text-primary-blue">MA</span>CS
               </button>
               <Link
                 href="https://discord.gg/macs"
-                className="text-lg col-start-2 w-fit center bg-primary-blue hover:bg-blue-200 hover:text-white py-2 px-7 border border-white rounded-full italic inline-flex items-center"
+                className="text-lg col-start-2 w-fit center bg-primary-blue  ease-in hover:-translate-y-1 hover:scale-110 hover:bg-blue-200 hover:text-white py-2 px-7 border border-white rounded-full italic inline-flex items-center"
               >
                 <span className="mr-2 text-primary-black ">Join Now</span>
                 <svg
