@@ -6,18 +6,18 @@ export default function Team() {
   return (
     <div className="">
       <h2 className="text-4xl italic font-bold  text-center">
-        Executive <span className="text-primary-blue">Team</span>
+        <Animation animationDirection="right-to-left">
+          Executive <span className="text-primary-blue">Team</span>
+        </Animation>
       </h2>
-      <Animation animationDirection="left-to-right">
-        <div className="hidden md:block">
-          <Timeline></Timeline>
-        </div>
-      </Animation>
-      <Animation animationDirection="right-to-left">
-        <div className="md:hidden">
-          <DropdownComponent></DropdownComponent>
-        </div>
-      </Animation>
+
+      <div className="hidden md:block">
+        <Timeline></Timeline>
+      </div>
+
+      <div className="md:hidden">
+        <DropdownComponent></DropdownComponent>
+      </div>
     </div>
   );
 }

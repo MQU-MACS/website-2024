@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, ChangeEvent } from "react";
 import data from "./data.json";
-
+import Animation from "@/components/ScrollAnimation";
 const years = [
   "2023",
   "2022",
@@ -23,28 +23,32 @@ export default function DropdownComponent() {
 
   return (
     <div className="w-full flex flex-col items-center py-16 relative">
-      <select
-        className=" w-28 h-10 text-lg text-center text-primary-black bg-white rounded-full"
-        value={selectedYear}
-        onChange={handleYearChange}
-      >
-        {years.map((year) => (
-          <option key={year} value={year}>
-            {year}
-          </option>
-        ))}
-      </select>
+      <Animation animationDirection="top-to-bottom">
+        <select
+          className=" w-28 h-10 text-lg text-center text-primary-black bg-white rounded-full"
+          value={selectedYear}
+          onChange={handleYearChange}
+        >
+          {years.map((year) => (
+            <option key={year} value={year}>
+              {year}
+            </option>
+          ))}
+        </select>
+      </Animation>
       <div className="py-16">
         {yearData && (
-          <div className="grid grid-cols-2 gap-16  text-primary-black p-8 rounded">
-            {yearData.map((item, index) => (
-              <div key={index}>
-                <img src={item.image} alt={``} className="rounded-full " />
-                <p className="font-bold text-primary-blue">{item.name}</p>
-                <p className="text-white"> {item.role}</p>
-              </div>
-            ))}
-          </div>
+          <Animation animationDirection="top-to-bottom">
+            <div className="grid grid-cols-2 gap-16  text-primary-black p-8 rounded">
+              {yearData.map((item, index) => (
+                <div key={index}>
+                  <img src={item.image} alt={``} className="rounded-full " />
+                  <p className="font-bold text-primary-blue">{item.name}</p>
+                  <p className="text-white"> {item.role}</p>
+                </div>
+              ))}
+            </div>
+          </Animation>
         )}
         <p className="text-white text-2x1 text-center">
           If you are interested in getting involved, please talk to any of our

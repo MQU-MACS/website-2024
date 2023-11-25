@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { navLinks } from "../constants";
 import Link from "next/link";
-
+import Animation from "@/components/ScrollAnimation";
 export default function Nav() {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const toggleNav = () => {
