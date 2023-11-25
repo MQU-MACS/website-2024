@@ -42,7 +42,11 @@ export default function DropdownComponent() {
             <div className="grid grid-cols-2 gap-16  text-primary-black p-8 rounded">
               {yearData.map((item, index) => (
                 <div key={index}>
-                  <img src={item.image} alt={``} className="rounded-full " />
+                  <img
+                    src={item.image}
+                    alt={item.alt}
+                    className="rounded-full "
+                  />
                   <p className="font-bold text-primary-blue">{item.name}</p>
                   <p className="text-white"> {item.role}</p>
                 </div>
