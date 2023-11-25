@@ -19,7 +19,6 @@ const VerticalTabMenu: React.FC = () => {
     setCurrentYear(year);
   };
 
-  // Access data for the current year from the JSON file
   const currentData = data[currentYear as keyof typeof data];
 
   const numRows = Math.ceil(currentData.length / 4);
@@ -54,7 +53,13 @@ const VerticalTabMenu: React.FC = () => {
             <div className="row-start-1 gap-8 grid grid-rows-${numRows} lg:grid-cols-4 md:grid-cols-3 bg-primary-black border-white border-opacity-40 border-4 rounded-[2.5rem] p-6">
               {currentData.map((item, index) => (
                 <div key={index} className="text-center ">
-                  <img src={item.image} className="rounded-[5rem]" />
+                  <img
+                    src={item.image}
+                    alt={item.alt}
+                    width={item.width}
+                    height={item.height}
+                    className="rounded-[5rem]"
+                  />
                   <div className="text-2xl text-primary-blue font-bold">
                     {item.name}
                   </div>

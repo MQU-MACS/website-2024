@@ -44,7 +44,9 @@ export default function DropdownComponent() {
                 <div key={index}>
                   <img
                     src={item.image}
-                    alt={``}
+                    alt={item.alt}
+                    width={item.width}
+                    height={item.height}
                     className="rounded-[3.5rem] "
                   />
                   <p className="font-bold text-primary-blue">{item.name}</p>

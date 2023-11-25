@@ -61,7 +61,7 @@ export default function Home() {
         <div className=" col-span-3 row-span-3 bg-[url('/HomePage_Image.webp')]  md:[clip-path:polygon(0%_0%,150%_0%,100%_480%)] bg-cover max-w-screen"></div>
 
         <div className="absolute bottom-0 left-0 w-full h-48 bg-gradient-to-t from-primary-black"></div>
-        <a href="/#about">
+        <a href="/#about" aria-label="Down arrow goes to about us page">
           <svg
             width="27"
             height="18"
@@ -112,7 +112,7 @@ export default function Home() {
               </button>
             </div>
             <div className="absolute bottom-0 left-0 w-full h-48 bg-gradient-to-t from-primary-black"></div>
-            <a href="/#about">
+            <a href="/#about" aria-label="Read more about Seminole tax hike">
               <svg
                 width="27"
                 height="18"

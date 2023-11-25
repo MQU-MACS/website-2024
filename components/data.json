@@ -1,88 +1,88 @@
 {
     "2023": [
-      { "name": "","role":"", "image": "ZAHLIA.webp" },
-      { "name": "", "role":"","image": "KAY.webp" },
-      { "name": "", "role":"","image": "KABIR.webp" },
-      { "name": "", "role":"","image": "IZRID.webp" },
-      { "name": "", "role":"","image": "KESH.webp" },
-      { "name": "", "role":"","image": "MARK.webp" },
-      { "name": "", "role":"","image": "PARTH.webp" },
-      { "name": "", "role":"","image": "CALEB.webp" },
-      { "name": "", "role":"","image": "TOAST.webp" }
+      { "name": "","role":"", "image": "ZAHLIA.webp", "alt":"Card Banner of President" , "width":"685", "height": "992"},
+      { "name": "", "role":"","image": "KAY.webp", "alt":"Card Banner of Vice President", "width":"685", "height": "992"},
+      { "name": "", "role":"","image": "KABIR.webp" , "alt":"Card Banner of Treasurer", "width":"685", "height": "992"},
+      { "name": "", "role":"","image": "IZRID.webp" , "alt":"Card Banner of General Executive", "width":"685", "height": "992"},
+      { "name": "", "role":"","image": "KESH.webp" , "alt":"Card Banner of General Executive", "width":"685", "height": "992"},
+      { "name": "", "role":"","image": "MARK.webp" , "alt":"Card Banner of General Executive", "width":"685", "height": "992"},
+      { "name": "", "role":"","image": "PARTH.webp" , "alt":"Card Banner of General Executive", "width":"685", "height": "992"},
+      { "name": "", "role":"","image": "CALEB.webp" , "alt":"Card Banner of General Executive", "width":"685", "height": "992"},
+      { "name": "", "role":"","image": "TOAST.webp" , "alt":"Card Banner of General Executive", "width":"685", "height": "992"}
     ],
     "2022": [
-      { "name": "Jordan Bertasso","role":"President", "image": "" },
-      { "name": "Lucianna Salloum", "role":"Vice President","image": "" },
-      { "name": "David Sanders", "role":"Secretary","image": "" },
-      { "name": "Liam Strang", "role":"Treasurer","image": "" },
-      { "name": "Michael Parker", "role":"Computing Representative","image": "" },
-      { "name": "Jesse Nguyen", "role":"Cyber Security Representative","image": "" },
-      { "name": "Dominic Hartman ", "role":"General Executive","image": "" },
-      { "name": "Zahlia Hamer", "role":"General Executive","image": "" }
+      { "name": "Jordan Bertasso","role":"President", "image": "" , "alt":"" , "width":"", "height": ""},
+      { "name": "Lucianna Salloum", "role":"Vice President","image": "", "alt":"", "width":"", "height": "" },
+      { "name": "David Sanders", "role":"Secretary","image": "" , "alt":"", "width":"", "height": ""},
+      { "name": "Liam Strang", "role":"Treasurer","image": "" , "alt":"", "width":"", "height": ""},
+      { "name": "Michael Parker", "role":"Computing Representative","image": "", "alt":"" , "width":"", "height": ""},
+      { "name": "Jesse Nguyen", "role":"Cyber Security Representative","image": "", "alt":"" , "width":"", "height": ""},
+      { "name": "Dominic Hartman ", "role":"General Executive","image": "" , "alt":"", "width":"", "height": ""},
+      { "name": "Zahlia Hamer", "role":"General Executive","image": "", "alt":"" , "width":"", "height": ""}
     ],
     "2021 S2": [
-      { "name": "Jordan Bertasso","role":"President", "image": "" },
-      { "name": "Lucianna Salloum", "role":"Vice President","image": "" },
-      { "name": "David Sanders", "role":"Secretary","image": "" },
-      { "name": "Nataly Falero", "role":"Treasurer","image": "" },
-      { "name": "Michael Parker", "role":"Computing Representative","image": "" },
-      { "name": "Jesse Nguyen", "role":"Cyber Security Representative","image": "" },
-      { "name": "Liam Strang ", "role":"General Executive","image": "" }
+      { "name": "Jordan Bertasso","role":"President", "image": "" , "alt":"" , "width":"", "height": ""},
+      { "name": "Lucianna Salloum", "role":"Vice President","image": "" , "alt":"", "width":"", "height": ""},
+      { "name": "David Sanders", "role":"Secretary","image": "" , "alt":"", "width":"", "height": ""},
+      { "name": "Nataly Falero", "role":"Treasurer","image": "" , "alt":"", "width":"", "height": ""},
+      { "name": "Michael Parker", "role":"Computing Representative","image": "" , "alt":"", "width":"", "height": ""},
+      { "name": "Jesse Nguyen", "role":"Cyber Security Representative","image": "" , "alt":"", "width":"", "height": ""},
+      { "name": "Liam Strang ", "role":"General Executive","image": "", "alt":"" , "width":"", "height": ""}
     
     ],
     "2021 S1": [
-      { "name": "Jordan Bertasso","role":"President", "image": "" },
-      { "name": " Alex Taylor", "role":"Vice President","image": "" },
-      { "name": "Lucianna Salloum", "role":"Secretary","image": "" },
-      { "name": "Nataly Falero", "role":"Treasurer","image": "" },
-      { "name": "Michael Parker", "role":"Computing Representative","image": "" },
-      { "name": "Elise McCabe","role":"Postgraduate Representative", "image": "" },
-      { "name": "Jesse Nguyen", "role":"Cyber Security Representative","image": "" },
-      { "name": "Jack Moore", "role":"General Executive","image": "" },
-      { "name": "Liam Strang ", "role":"General Executive","image": "" }
+      { "name": "Jordan Bertasso","role":"President", "image": "", "alt":"" , "width":"", "height": ""},
+      { "name": " Alex Taylor", "role":"Vice President","image": "", "alt":"" , "width":"", "height": ""},
+      { "name": "Lucianna Salloum", "role":"Secretary","image": "" , "alt":"", "width":"", "height": ""},
+      { "name": "Nataly Falero", "role":"Treasurer","image": "" , "alt":"", "width":"", "height": ""},
+      { "name": "Michael Parker", "role":"Computing Representative","image": "" , "alt":"", "width":"", "height": ""},
+      { "name": "Elise McCabe","role":"Postgraduate Representative", "image": "" , "alt":"", "width":"", "height": ""},
+      { "name": "Jesse Nguyen", "role":"Cyber Security Representative","image": "" , "alt":"", "width":"", "height": ""},
+      { "name": "Jack Moore", "role":"General Executive","image": "" , "alt":"", "width":"", "height": ""},
+      { "name": "Liam Strang ", "role":"General Executive","image": "" , "alt":"", "width":"", "height": ""}
   
     ],
     
     "2020": [
-      { "name": "Jordan Bertasso","role":"President", "image": "" },
-      { "name": " Alex Taylor", "role":"Vice President","image": "" },
-      { "name": "Lin Xie", "role":"Secretary","image": "" },
-      { "name": "Himadri Sagar", "role":"Treasurer","image": "" },
-      { "name": "Dai Nguyen", "role":"Event & Social Media Coordinator","image": "" },
-      { "name": "Jack Moore", "role":"Event & Social Media Coordinator","image": "" },
-      { "name": "Mitchell Whyte ", "role":"Event & Social Media Coordinator","image": "" }
+      { "name": "Jordan Bertasso","role":"President", "image": "" , "alt":"", "width":"", "height": ""},
+      { "name": " Alex Taylor", "role":"Vice President","image": "" , "alt":"", "width":"", "height": ""},
+      { "name": "Lin Xie", "role":"Secretary","image": "" , "alt":"" , "width":"", "height": ""},
+      { "name": "Himadri Sagar", "role":"Treasurer","image": "" , "alt":"" , "width":"", "height": ""},
+      { "name": "Dai Nguyen", "role":"Event & Social Media Coordinator","image": "" , "alt":"", "width":"", "height": ""},
+      { "name": "Jack Moore", "role":"Event & Social Media Coordinator","image": "" , "alt":"", "width":"", "height": ""},
+      { "name": "Mitchell Whyte ", "role":"Event & Social Media Coordinator","image": "" , "alt":"", "width":"", "height": ""}
   
       ],
       "2019": [
-        { "name": "Jordan Bertasso","role":"President", "image": "" },
-        { "name": "Alex Grbic", "role":"Secretary","image": "" },
-        { "name": "Arvin Han", "role":"Treasurer","image": "" },
-        { "name": "Lin Xie", "role":"Social Media Coordinator","image": "" },
-        { "name": "Jack Moore", "role":"Social Media Coordinator","image": "" },
-        { "name": "Dai Nguyen", "role":"General Executive","image": "" }
+        { "name": "Jordan Bertasso","role":"President", "image": "" , "alt":"", "width":"", "height": ""},
+        { "name": "Alex Grbic", "role":"Secretary","image": "" , "alt":"", "width":"", "height": ""},
+        { "name": "Arvin Han", "role":"Treasurer","image": "" , "alt":"", "width":"", "height": ""},
+        { "name": "Lin Xie", "role":"Social Media Coordinator","image": "" , "alt":"" , "width":"", "height": ""},
+        { "name": "Jack Moore", "role":"Social Media Coordinator","image": "" , "alt":"" , "width":"", "height": ""},
+        { "name": "Dai Nguyen", "role":"General Executive","image": "" , "alt":"", "width":"", "height": ""}
        
       
       ],
       "2018": [
-        { "name": "Amita Trikam","role":"President", "image": "" },
-        { "name": "Matthew Yeatman", "role":"Secretary","image": "" },
-        { "name": "Josh Spencer", "role":"Treasurer","image": "" },
-        { "name": "Matt Cabanag", "role":"Faculty Liaison","image": "" },
-        { "name": "Michael Bauer", "role":"Head of Tutoring","image": "" },
-        { "name": "Anthony Heng", "role":"Planning Team","image": "" },
-        { "name": "Jason Ros", "role":"Planning Team","image": "" },
-        { "name": "Lin Xie", "role":"Planning Team","image": "" },
-        { "name": "Emel Unsal", "role":"General Executive","image": "" }
+        { "name": "Amita Trikam","role":"President", "image": "" , "alt":"", "width":"", "height": ""},
+        { "name": "Matthew Yeatman", "role":"Secretary","image": "" , "alt":"", "width":"", "height": ""},
+        { "name": "Josh Spencer", "role":"Treasurer","image": "" , "alt":"", "width":"", "height": ""},
+        { "name": "Matt Cabanag", "role":"Faculty Liaison","image": "" , "alt":"", "width":"", "height": ""},
+        { "name": "Michael Bauer", "role":"Head of Tutoring","image": "" , "alt":"", "width":"", "height": ""},
+        { "name": "Anthony Heng", "role":"Planning Team","image": "" , "alt":"", "width":"", "height": ""},
+        { "name": "Jason Ros", "role":"Planning Team","image": "" , "alt":"", "width":"", "height": ""},
+        { "name": "Lin Xie", "role":"Planning Team","image": "" , "alt":"", "width":"", "height": ""},
+        { "name": "Emel Unsal", "role":"General Executive","image": "" , "alt":"", "width":"", "height": ""}
       
       ],
       "2017": [
-        { "name": "Amita Trikam","role":"Cofounding Team Member", "image": "" },
-        { "name": "Linton Ball", "role":"Cofounding Team Member","image": "" },
-        { "name": "Matt Cabanag", "role":"Cofounding Team Member","image": "" },
-        { "name": "Josh Spencer", "role":"Cofounding Team Member","image": "" },
-        { "name": "Aaron Takizad", "role":"Cofounding Team Member","image": "" },
-        { "name": "Michael Bauer", "role":"Cofounding Team Member","image": "" },
-        { "name": "Matthew Yeatman", "role":"Cofounding Team Member","image": "" }
+        { "name": "Amita Trikam","role":"Cofounding Team Member", "image": "", "alt":"" , "width":"", "height": "" },
+        { "name": "Linton Ball", "role":"Cofounding Team Member","image": "" , "alt":"", "width":"", "height": ""},
+        { "name": "Matt Cabanag", "role":"Cofounding Team Member","image": "", "alt":"" , "width":"", "height": ""},
+        { "name": "Josh Spencer", "role":"Cofounding Team Member","image": "" , "alt":"", "width":"", "height": ""},
+        { "name": "Aaron Takizad", "role":"Cofounding Team Member","image": "" , "alt":"", "width":"", "height": ""},
+        { "name": "Michael Bauer", "role":"Cofounding Team Member","image": "" , "alt":"", "width":"", "height": ""},
+        { "name": "Matthew Yeatman", "role":"Cofounding Team Member","image": "" , "alt":"", "width":"", "height": ""}
         
       ]
      
