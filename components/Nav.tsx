@@ -20,11 +20,6 @@ export default function Nav() {
             width={130}
             height={35}
             className="m-0"
-<<<<<<< HEAD
-            width="130"
-            height="35"
-=======
->>>>>>> fb23f9d6fa8357ac6943f6c96149065f46edcf67
           />
         </a>
         <div className="flex max-lg:hidden">
