@@ -68,7 +68,7 @@ export default function Home() {
             viewBox="0 0 27 18"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="absolute inset-x-0 bottom-0 left-1/2 transform -translate-y-16"
+            className="absolute inset-x-0 bottom-0 mx-auto transform -translate-y-16"
           >
             <path
               d="M3 3L13.5 14L24 3"
@@ -119,7 +119,7 @@ export default function Home() {
                 viewBox="0 0 27 18"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="absolute inset-x-0 bottom-0 left-1/2 transform -translate-y-16"
+                className="absolute inset-x-0 bottom-0 mx-auto transform -translate-y-16"
               >
                 <path
                   d="M3 3L13.5 14L24 3"
