@@ -14,7 +14,7 @@ export default function Sponsor() {
         </p>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-24 text-center padding-x">
+      <div className="grid md:grid-cols-2 gap-24 text-center px-2 md:padding-x">
         <div className="relative">
           <div className="absolute inset-0 bg-primary-blue transform translate-x-[-1rem] translate-y-[-1rem] md:translate-x-[-2rem] md:translate-y-[-2rem] rounded-xl "></div>
           {/* <Animation animationDirection="left-to-right"> */}
@@ -73,14 +73,17 @@ export default function Sponsor() {
         </div>
       </div>
       <Link
-        href="mailto:macs.exec@gmail.com"
+        href="/#contact"
         className=" text-lg mt-12 w-fit center bg-transparent hover:bg-black hover:text-white  py-2 px-7 border border-white rounded-full italic"
       >
         Become a <span className="text-primary-blue">Sponsor</span>
       </Link>
-      <p className="mt-4 text-sm italic font-light">
+      <Link
+        href="mailto:macs.exec@gmail.com"
+        className="mt-4 text-sm italic font-light"
+      >
         Or contact us at macs.exec@gmail.com
-      </p>
+      </Link>
     </div>
   );
 }

@@ -24,7 +24,7 @@ const VerticalTabMenu: React.FC = () => {
   const numRows = Math.ceil(currentData.length / 4);
 
   return (
-    <div className="grid grid-cols-8 p-16">
+    <div className="grid grid-cols-8 p-16 pb-0">
       <Animation animationDirection="left-to-right">
         <div className="col-start-1 bg-white w-1 h-max  flex flex-col items-center rounded">
           <div className="gap-8 flex flex-col justify-between  items-start">
@@ -49,8 +49,8 @@ const VerticalTabMenu: React.FC = () => {
 
       <div className="col-start-2 col-span-7 max-w-full grid-rows-2  ">
         <Animation animationDirection="left-to-right">
-          <div className=" w-full h-full rounded   ">
-            <div className="row-start-1 gap-8 grid grid-rows-${numRows} grid-cols-4 ">
+          <div className=" w-full h-full rounded ">
+            <div className="row-start-1 gap-8 grid grid-rows-${numRows} lg:grid-cols-4 md:grid-cols-3 bg-primary-black border-white border-opacity-40 border-4 rounded-[2.5rem] p-6">
               {currentData.map((item, index) => (
                 <div key={index} className="text-center ">
                   <img
@@ -58,7 +58,7 @@ const VerticalTabMenu: React.FC = () => {
                     alt={item.alt}
                     width={item.width}
                     height={item.height}
-                    className="rounded-full "
+                    className="rounded-[5rem]"
                   />
                   <div className="text-2xl text-primary-blue font-bold">
                     {item.name}

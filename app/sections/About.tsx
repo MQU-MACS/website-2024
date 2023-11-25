@@ -4,7 +4,7 @@ import imagesData from "@/components/images.json";
 
 const ContentSection = () => (
   <div>
-    <h2 className=" text-4xl italic font-bold mb-8">
+    <h2 className=" text-4xl italic font-bold mb-8 text-center md:text-left">
       Welcome to <span className="text-primary-blue">MACS</span>
     </h2>
     <p className=" text-2xl text-white mb-4">

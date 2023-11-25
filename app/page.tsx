@@ -20,7 +20,7 @@ export default function Home() {
       </section>
 
       <Animation animationDirection="right-to-left">
-        <section id="about" className="padding">
+        <section id="about" className="padding-x pt-24 md:pb-0 pb-24">
           <About />
         </section>
       </Animation>
