@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Sponsor() {
   return (
     <div className="flex flex-col items-center">
-      <div className="animate-marquee5 flex flex-col text-center mb-16">
+      <div className="flex flex-col text-center mb-16">
         <h2 className="text-4xl italic font-bold mb-4">
           Our <span className="text-primary-blue">Sponsors</span>
         </h2>
@@ -16,7 +16,7 @@ export default function Sponsor() {
       <div className="grid md:grid-cols-2 gap-24 text-center padding-x">
         <div className="relative">
           <div className="absolute inset-0 bg-primary-blue transform translate-x-[-1rem] translate-y-[-1rem] md:translate-x-[-2rem] md:translate-y-[-2rem] rounded-xl "></div>
-          <div className="animate-marquee4 relative flex flex-col items-center bg-white p-8 rounded-xl pb-16 z-10">
+          <div className=" relative flex flex-col items-center bg-white p-8 rounded-xl pb-16 z-10">
             <img
               src="/Atlassian Logo.webp"
               className="
@@ -40,7 +40,7 @@ export default function Sponsor() {
 
         <div className="relative">
           <div className="absolute inset-0 bg-primary-blue transform translate-x-[1rem] -translate-y-[-1rem] md:translate-x-[2rem] md:-translate-y-[-2rem] rounded-xl"></div>
-          <div className="animate-marquee3 relative flex flex-col items-center h-full bg-white p-8 rounded-xl pb-16 z-10">
+          <div className=" relative flex flex-col items-center h-full bg-white p-8 rounded-xl pb-16 z-10">
             <img
               src="/Macquarie Bank Logo.webp"
               className="
