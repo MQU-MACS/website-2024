@@ -18,8 +18,8 @@ export default function Nav() {
             src="/MACS Logo.webp"
             alt="logo"
             className="m-0"
-            width="full"
-            height="full"
+            width="130"
+            height="35"
           />
         </a>
         <ul className="flex-1 flex justify-end items-center gap-16 max-lg:hidden">
