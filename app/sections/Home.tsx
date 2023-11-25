@@ -95,7 +95,10 @@ export default function Home() {
             </p>
 
             <div className="flex flex-row flex-wrap gap-4 items-center justify-center  mt-8">
-              <button className="w-fit center bg-[#12151E] hover:bg-blue-200  hover:text-white py-2 px-4 border border-white rounded-full italic inline-flex items-center">
+              <button
+                onClick={scrollToAbout}
+                className="w-fit center bg-[#12151E] hover:bg-blue-200  hover:text-white py-2 px-4 border border-white rounded-full italic inline-flex items-center"
+              >
                 About&nbsp; <span className="text-primary-blue">MA</span>CS
               </button>
               <button className="w-fit center bg-primary-blue hover:bg-blue-200 hover:text-white py-2 px-4 border border-white rounded-full italic inline-flex items-center">
