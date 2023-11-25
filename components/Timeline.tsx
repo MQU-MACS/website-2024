@@ -19,7 +19,6 @@ const VerticalTabMenu: React.FC = () => {
     setCurrentYear(year);
   };
 
-  // Access data for the current year from the JSON file
   const currentData = data[currentYear as keyof typeof data];
 
   const numRows = Math.ceil(currentData.length / 4);
@@ -57,6 +56,8 @@ const VerticalTabMenu: React.FC = () => {
                   <img
                     src={item.image}
                     alt={item.alt}
+                    width={item.width}
+                    height={item.height}
                     className="rounded-full "
                   />
                   <div className="text-2xl text-primary-blue font-bold">

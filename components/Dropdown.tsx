@@ -45,6 +45,8 @@ export default function DropdownComponent() {
                   <img
                     src={item.image}
                     alt={item.alt}
+                    width={item.width}
+                    height={item.height}
                     className="rounded-full "
                   />
                   <p className="font-bold text-primary-blue">{item.name}</p>
