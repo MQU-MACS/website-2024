@@ -54,7 +54,11 @@ const VerticalTabMenu: React.FC = () => {
             <div className="row-start-1 gap-8 grid grid-rows-${numRows} grid-cols-4 ">
               {currentData.map((item, index) => (
                 <div key={index} className="text-center ">
-                  <img src={item.image} className="rounded-full " />
+                  <img
+                    src={item.image}
+                    alt={item.alt}
+                    className="rounded-full "
+                  />
                   <div className="text-2xl text-primary-blue font-bold">
                     {item.name}
                   </div>
