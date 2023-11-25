@@ -36,6 +36,7 @@ export default function Carousel({ slides }: CarouselProps) {
         {slides.map((slide, index) => (
           <div key={index} style={{ width: `${100 / slides.length}%` }}>
             <img
+              loading="lazy"
               src={slide.src}
               alt={slide.alt}
               className="w-full h-full rounded-2xl object-cover"

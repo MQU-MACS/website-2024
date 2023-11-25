@@ -28,6 +28,7 @@ export default function DropdownComponent() {
           className=" w-28 h-10 text-lg text-center text-primary-black bg-white rounded-full"
           value={selectedYear}
           onChange={handleYearChange}
+          aria-label="dropdown"
         >
           {years.map((year) => (
             <option key={year} value={year}>
