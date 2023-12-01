@@ -1,5 +1,12 @@
+"use client";
+import React, { useState } from "react";
 import Animation from "@/components/ScrollAnimation";
 export default function Contact() {
+  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
+  const handleSubmit = async (event: { preventDefault: () => void }) => {
+    event.preventDefault();
+    setIsFormSubmitted(true);
+  };
   return (
     <div className="relative overflow-hidden mx-auto">
       <div className="relative px-8 z-10">
@@ -12,63 +19,72 @@ export default function Contact() {
             Got a technical issue? Want to send feedback about a beta feature? Need
             details about our Business plan? Let us know.
           </p> */}
-
-            <form
-              action="#"
-              className="space-y-8 px-2 md:px-8"
-              data-netlify="true"
-              method="POST"
-            >
-              <div>
-                <label
-                  htmlFor="name"
-                  className="block mb-2 text-sm font-medium text-white"
-                >
-                  Name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  className="block p-3 w-full text-sm text-primary-black bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 "
-                  placeholder="Enter your name"
-                  required
-                />
+            {isFormSubmitted ? (
+              <div className="text-center">
+                Thank you for submitting the form!
               </div>
-              <div>
-                <label
-                  htmlFor="email"
-                  className="block mb-2 text-sm font-medium text-white "
-                >
-                  Your email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  className="block p-3 w-full text-sm text-primary-black bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 "
-                  placeholder="name@MACS.com"
-                  required
-                />
-              </div>
-              <div className="sm:col-span-2">
-                <label
-                  htmlFor="message"
-                  className="block mb-2 text-sm font-medium text-white "
-                >
-                  Your message
-                </label>
-                <textarea
-                  id="message"
-                  className="block p-3 w-full text-sm text-primary-black bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 "
-                  placeholder="Leave a message"
-                  rows={8}
-                ></textarea>
-              </div>
-              <div className="mx-auto text-center">
-                <button className="w-fit center bg-transparent hover:bg-black hover:text-white  py-2 px-7 border border-white rounded-full italic">
-                  Submit
-                </button>
-              </div>
-            </form>
+            ) : (
+              <form
+                className="space-y-8 px-2 md:px-8"
+                data-netlify="true"
+                method="POST"
+                name="contact"
+                onSubmit={handleSubmit}
+              >
+                <div>
+                  <label
+                    htmlFor="name"
+                    className="block mb-2 text-sm font-medium text-white"
+                  >
+                    Name
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    className="block p-3 w-full text-sm text-primary-black bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 "
+                    placeholder="Enter your name"
+                    required
+                  />
+                </div>
+                <div>
+                  <label
+                    htmlFor="email"
+                    className="block mb-2 text-sm font-medium text-white "
+                  >
+                    Your email
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    className="block p-3 w-full text-sm text-primary-black bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 "
+                    placeholder="name@MACS.com"
+                    required
+                  />
+                </div>
+                <div className="sm:col-span-2">
+                  <label
+                    htmlFor="message"
+                    className="block mb-2 text-sm font-medium text-white "
+                  >
+                    Your message
+                  </label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    className="block p-3 w-full text-sm text-primary-black bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 "
+                    placeholder="Leave a message"
+                    rows={8}
+                  ></textarea>
+                </div>
+                <div className="mx-auto text-center">
+                  <button className="w-fit center bg-transparent hover:bg-black hover:text-white  py-2 px-7 border border-white rounded-full italic">
+                    Submit
+                  </button>
+                </div>
+              </form>
+            )}
           </div>
         </Animation>
         <p className="text-center mb-8 w-fit mx-auto rounded-full p-4">
