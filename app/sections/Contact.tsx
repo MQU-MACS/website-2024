@@ -17,6 +17,7 @@ export default function Contact() {
               action="#"
               className="space-y-8 px-2 md:px-8"
               data-netlify="true"
+              method="POST"
             >
               <div>
                 <label
