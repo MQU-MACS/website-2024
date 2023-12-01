@@ -13,7 +13,7 @@ export default function Contact() {
             details about our Business plan? Let us know.
           </p> */}
 
-            <form action="#" className="space-y-8 px-2 md:px-8">
+            <form action="#" className="space-y-8 px-2 md:px-8" netlify>
               <div>
                 <label
                   htmlFor="name"
