@@ -16,13 +16,6 @@ export default function Carousel({ slides }: CarouselProps) {
     if (current === slides.length - 1) setCurrent(0);
     else setCurrent(current + 1);
   };
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrent((prevCurrent) => (prevCurrent + 1) % slides.length);
-    }, 5000);
-
-    return () => clearInterval(timer); // This will clear the timer when the component unmounts
-  }, [slides.length]);
 
   return (
     <div className="overflow-hidden relative">
