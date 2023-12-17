@@ -88,8 +88,13 @@ export default function Contact() {
             )}
           </div>
         </Animation>
-        <p className="text-center mb-8 w-fit mx-auto rounded-full p-4">
+        <p className="text-center mb-4 w-fit mx-auto rounded-full p-4">
           © 2023 Macquarie Association of Computing Students
+        </p>
+        <p className="text-center mb-2  w-fit mx-auto rounded-full ">
+          <a href="https://github.com/peterlqs/MACS">
+            Made by: Peter Quan and Noel Gens
+          </a>
         </p>
       </div>
 
