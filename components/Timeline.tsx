@@ -4,6 +4,7 @@ import data from "./data.json";
 import Animation from "@/components/ScrollAnimation";
 const VerticalTabMenu: React.FC = () => {
   const years = [
+    "2024",
     "2023",
     "2022",
     "2021 S2",
@@ -53,13 +54,6 @@ const VerticalTabMenu: React.FC = () => {
             <div className="row-start-1 gap-8 grid grid-rows-${numRows} lg:grid-cols-4 md:grid-cols-3 bg-primary-black border-white border-opacity-40 border-4 rounded-[2.5rem] p-6">
               {currentData.map((item, index) => (
                 <div key={index} className="text-center ">
-                  <img
-                    src={item.image}
-                    alt={item.alt}
-                    width={item.width}
-                    height={item.height}
-                    className="rounded-[5rem]"
-                  />
                   <div className="text-2xl text-primary-blue font-bold">
                     {item.name}
                   </div>

@@ -3,6 +3,7 @@ import React, { useState, ChangeEvent } from "react";
 import data from "./data.json";
 import Animation from "@/components/ScrollAnimation";
 const years = [
+  "2024",
   "2023",
   "2022",
   "2021 S2",
@@ -43,13 +44,6 @@ export default function DropdownComponent() {
             <div className="grid grid-cols-2 gap-x-4 gap-y-6 text-primary-black bg-primary-black border-white border-opacity-40 border-2 rounded-[2.5rem] p-4">
               {yearData.map((item, index) => (
                 <div key={index}>
-                  <img
-                    src={item.image}
-                    alt={item.alt}
-                    width={item.width}
-                    height={item.height}
-                    className="rounded-[3.5rem] "
-                  />
                   <p className="font-bold text-primary-blue">{item.name}</p>
                   <p className="text-white"> {item.role}</p>
                 </div>
