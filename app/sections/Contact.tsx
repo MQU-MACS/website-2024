@@ -1,12 +1,30 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { FormEvent, useEffect, useState } from "react";
 import Animation from "@/components/ScrollAnimation";
+
+const encode = (data: any) => {
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+};
 export default function Contact() {
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
-  const handleSubmit = async (event: { preventDefault: () => void }) => {
+
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    setIsFormSubmitted(true);
+
+    // Submit form
+    const formData = new FormData(event.currentTarget);
+    const response = await fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact-form", ...formData }),
+    });
+
+    if (response.status === 200) {
+      setIsFormSubmitted(true);
+    }
   };
 
   return (
@@ -17,10 +35,6 @@ export default function Contact() {
             <h2 className="text-white mb-4 text-4xl italic font-bold text-center">
               Contact <span className="text-primary-blue">Us</span>
             </h2>
-            {/* <p className="mb-8 lg:mb-16 font-light text-center text-white sm:text-xl">
-            Got a technical issue? Want to send feedback about a beta feature? Need
-            details about our Business plan? Let us know.
-          </p> */}
             {isFormSubmitted ? (
               <div className="text-center">
                 Thank you for submitting the form!
@@ -32,7 +46,6 @@ export default function Contact() {
                 method="POST"
                 name="contact"
                 onSubmit={handleSubmit}
-                action="/"
               >
                 <input type="hidden" name="form-name" value="contact"></input>
                 <div>
