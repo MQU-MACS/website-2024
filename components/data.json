@@ -20,19 +20,19 @@
 
 
     ],
-
+   
     "2023": [
-      { "name": "ZAHLIA","role":"President"},
-      { "name": "KAYLA", "role":"Vice President"},
-      { "name": "KABIR", "role":"Secretary"},
+      { "name": "ZAHLIA Hamer","role":"President"},
+      { "name": "Kayla McLoughlin", "role":"Vice President"},
+      { "name": "Kabir Acharya", "role":"Secretary"},
       { "name": "Izrid", "role":"Treasurer"},
-      { "name": "KESH", "role":"General Executive"},
-      { "name": "MARK", "role":"General Executive"},
-      { "name": "PARTH", "role":"General Executive"},
-      { "name": "CALEB", "role":"General Executive"},
-      { "name": "TOAST", "role":"General Executive"},
-      { "name": "YASMIN", "role":"General Executive"},
-      { "name": "IZABELLA", "role":"Social Media Manager"}
+      { "name": "Cathy Nguyen", "role":"General Executive"},
+      { "name": "Mark Saba", "role":"General Executive"},
+      { "name": "Parth Shah", "role":"General Executive"},
+      { "name": "Caleb Cruz", "role":"General Executive"},
+      { "name": "Toast Kangro", "role":"General Executive"},
+      { "name": "Yasmin Lee", "role":"General Executive"},
+      { "name": "Izabella Lloyd-White", "role":"Social Media Manager"}
     ],
     "2022": [
       { "name": "Jordan Bertasso","role":"President"},
