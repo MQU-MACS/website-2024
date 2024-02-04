@@ -3,29 +3,26 @@
 import React, { FormEvent, useEffect, useState } from "react";
 import Animation from "@/components/ScrollAnimation";
 
-const encode = (data: any) => {
-  return Object.keys(data)
-    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-    .join("&");
-};
 export default function Contact() {
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
 
-  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
+  async function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
     // Submit form
     const formData = new FormData(event.currentTarget);
+    console.log("HIII");
+    console.log(FormData);
     const response = await fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact-form", ...formData }),
+      body: formData,
     });
 
     if (response.status === 200) {
       setIsFormSubmitted(true);
     }
-  };
+  }
 
   return (
     <div className="relative overflow-hidden mx-auto">
@@ -45,7 +42,7 @@ export default function Contact() {
                 data-netlify="true"
                 method="POST"
                 name="contact"
-                onSubmit={handleSubmit}
+                onSubmit={onSubmit}
               >
                 <input type="hidden" name="form-name" value="contact"></input>
                 <div>
