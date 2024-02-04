@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useState } from "react";
 import Animation from "@/components/ScrollAnimation";
 export default function Contact() {
@@ -7,6 +8,7 @@ export default function Contact() {
     event.preventDefault();
     setIsFormSubmitted(true);
   };
+
   return (
     <div className="relative overflow-hidden mx-auto">
       <div className="relative px-8 z-10">
@@ -29,7 +31,7 @@ export default function Contact() {
                 data-netlify="true"
                 method="POST"
                 name="contact"
-                onSubmit={handleSubmit}
+                // onSubmit={handleSubmit}
               >
                 <input type="hidden" name="form-name" value="contact"></input>
                 <div>
@@ -84,17 +86,27 @@ export default function Contact() {
                     Submit
                   </button>
                 </div>
+                {isFormSubmitted && (
+                  <div className="text-center mt-4 bg-[#12151E] p-4 border border-green-800 text-green-300 rounded-2xl">
+                    Thank you for submitting the form!
+                  </div>
+                )}
               </form>
             )}
           </div>
         </Animation>
-        <p className="text-center mb-4 w-fit mx-auto rounded-full p-4">
+        <p className="text-center w-fit mx-auto rounded-full mb-1">
           © 2023 Macquarie Association of Computing Students
         </p>
-        <p className="text-center mb-2  w-fit mx-auto rounded-full ">
-          <a href="https://github.com/peterlqs/MACS">
-            Made by: Peter Quan and Noel Gens
-          </a>
+        <p className="text-center mb-4 w-fit mx-auto rounded-full text-sm text-slate-200">
+          Made by:{" "}
+          <a
+            href="https://github.com/peterlqs/MACS"
+            className="text-slate-400 hover:text-primary-blue"
+          >
+            Quan Nguyen (Peter)
+          </a>{" "}
+          and Noel Gens
         </p>
       </div>
 
