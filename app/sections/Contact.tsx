@@ -11,12 +11,17 @@ export default function Contact() {
 
     // Submit form
     const formData = new FormData(event.currentTarget);
-    console.log("HIII");
-    console.log(FormData);
+
+    const submitData = new URLSearchParams();
+    submitData.append("form-name", "contact");
+    submitData.append("name", formData.get("name") as string);
+    submitData.append("email", formData.get("email") as string);
+    submitData.append("message", formData.get("message") as string);
+
     const response = await fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: formData,
+      body: submitData,
     });
 
     if (response.status === 200) {
