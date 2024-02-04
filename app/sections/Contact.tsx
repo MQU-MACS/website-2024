@@ -31,7 +31,8 @@ export default function Contact() {
                 data-netlify="true"
                 method="POST"
                 name="contact"
-                // onSubmit={handleSubmit}
+                onSubmit={handleSubmit}
+                action="/"
               >
                 <input type="hidden" name="form-name" value="contact"></input>
                 <div>
@@ -86,11 +87,6 @@ export default function Contact() {
                     Submit
                   </button>
                 </div>
-                {isFormSubmitted && (
-                  <div className="text-center mt-4 bg-[#12151E] p-4 border border-green-800 text-green-300 rounded-2xl">
-                    Thank you for submitting the form!
-                  </div>
-                )}
               </form>
             )}
           </div>
