@@ -10,11 +10,11 @@ export default function Contact() {
   async function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
-    // Clear form
-    event.currentTarget.reset();
-
     const formData = new FormData(event.currentTarget);
     const { name, email, message } = Object.fromEntries(formData.entries());
+
+    // Clear form
+    event.currentTarget.reset();
 
     const submitData = new URLSearchParams({
       "form-name": "contact",

@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import Animation from "@/components/ScrollAnimation";
 
 export default function Sponsor() {
@@ -24,12 +23,10 @@ export default function Sponsor() {
           <div className="absolute inset-0 bg-primary-blue transform translate-x-[-1rem] translate-y-[-1rem] md:translate-x-[-2rem] md:translate-y-[-2rem] rounded-xl "></div>
           <div className="relative flex flex-col items-center bg-white p-8 rounded-xl pb-16 z-10">
             <Animation animationDirection="right-to-left">
-              <Image
+              <img
                 src="/Atlassian Logo.webp"
                 alt="Atlassian Logo"
-                width={400}
-                height={250}
-                objectFit="contain"
+                className="h-40 w-full object-contain"
               />
             </Animation>
             <Animation animationDirection="right-to-left">
@@ -50,12 +47,10 @@ export default function Sponsor() {
           <div className="absolute inset-0 bg-primary-blue transform translate-x-[1rem] -translate-y-[-1rem] md:translate-x-[2rem] md:-translate-y-[-2rem] rounded-xl"></div>
           <div className="relative flex flex-col items-center h-full bg-white p-8 rounded-xl pb-16 z-10">
             <Animation animationDirection="right-to-left">
-              <Image
+              <img
                 src="/Macquarie Bank Logo.webp"
                 alt="Macquarie Bank Logo"
-                width={400}
-                height={250}
-                objectFit="contain"
+                className="h-40 w-full object-contain"
               />
             </Animation>
             <Animation animationDirection="right-to-left">
