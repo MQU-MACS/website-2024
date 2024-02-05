@@ -1,13 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import Animation from "@/components/ScrollAnimation";
+
 export default function CTA() {
   return (
     <div className="relative overflow-hidden">
       <div className="flex flex-col text-center mb-8 items-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="sm:h-auto sm:w-screen  h-24"
+          className="sm:h-auto sm:w-screen h-24"
           viewBox="0 0 1440 151"
           fill="none"
         >
@@ -18,23 +19,26 @@ export default function CTA() {
         </svg>
         <div className="relative flex overflow-x-hidden -rotate-3 w-screen max-w-[1920px]">
           <div className="animate-marquee whitespace-nowrap">
-            <img
+            <Image
               src="/marquee 2.webp"
-              className="h-[31px] w-[1598px] max-w-none"
               alt="MACS Logos"
+              className="max-w-none"
+              width={1598}
+              height={31}
             />
           </div>
 
           <div className="absolute top-0 animate-marquee2 whitespace-nowrap">
-            <img
+            <Image
               src="/marquee 2.webp"
-              className="h-[31px] w-[1598px] max-w-none"
               alt="MACS Logos"
+              className="max-w-none"
+              width={1598}
+              height={31}
             />
           </div>
         </div>
-        {/* <Animation animationDirection="left-to-right"> */}
-        <div className=" padding-x py-48">
+        <div className="padding-x py-48">
           <Animation animationDirection="right-to-left">
             <h2 className="text-4xl italic font-bold mb-4">
               Become one of our{" "}
@@ -66,22 +70,25 @@ export default function CTA() {
             </Link>
           </Animation>
         </div>
-        {/* </Animation> */}
         <div className="relative flex overflow-x-hidden -rotate-3 w-screen max-w-[1920px]">
           <div className="animate-marquee whitespace-nowrap">
-            <img
+            <Image
               src="/marquee 2.webp"
-              className="h-[31px] w-[1598px] max-w-none"
               alt="MACS Logos"
-            />{" "}
+              className="max-w-none"
+              width={1598}
+              height={31}
+            />
           </div>
 
           <div className="absolute top-0 animate-marquee2 whitespace-nowrap">
-            <img
+            <Image
               src="/marquee 2.webp"
-              className="h-[31px] w-[1598px] max-w-none"
               alt="MACS Logos"
-            />{" "}
+              className="max-w-none"
+              width={1598}
+              height={31}
+            />
           </div>
         </div>
 

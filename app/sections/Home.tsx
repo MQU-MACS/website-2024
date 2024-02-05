@@ -1,24 +1,27 @@
 "use client";
 
 import Link from "next/link";
-import Animation from "@/components/ScrollAnimation";
+import Image from "next/image"; // Import the Image component
+
 export default function Home() {
   const scrollToAbout = () => {
     const about = document.getElementById("about");
     about?.scrollIntoView({ behavior: "smooth" });
   };
+
   return (
-    <div className=" relative overflow-hidden">
-      <div className="md:h-screen grid grid-cols-5 grid-rows-3  ">
-        <div className="col-span-2 row-span-full  flex flex-row items-center justify-end px-[10%]">
-          <div className=" max-w-full max-h-full hidden md:block">
-            <img
+    <div className="relative overflow-hidden">
+      <div className="md:h-screen grid-cols-5 grid-rows-3 hidden lg:grid">
+        <div className="col-span-2 row-span-full flex flex-row items-center justify-end px-[10%]">
+          <div className="max-w-full max-h-full">
+            <Image
               src="/MACSLOGOTRANS 2.webp"
-              className=" w-full h-full   "
               alt="MACS logo"
+              width={350}
+              height={350}
             />
 
-            <p className="text-4xl pt-4 pb-8 italic tracking-wide ">
+            <p className="text-4xl pt-4 pb-8 italic tracking-wide">
               Macquarie Association
               <br /> of Computing Students
             </p>
@@ -26,7 +29,7 @@ export default function Home() {
             <div className="flex gap-4">
               <button
                 onClick={scrollToAbout}
-                className="text-lg col-start-1 w-fit center  hover:bg-black hover:text-white py-2 px-7 border border-white rounded-full italic inline-flex items-center "
+                className="text-lg col-start-1 w-fit center  hover:bg-black hover:text-white py-2 px-7 border border-white rounded-full italic inline-flex items-center"
               >
                 About&nbsp; <span className="text-primary-blue">MA</span>CS
               </button>
@@ -58,7 +61,7 @@ export default function Home() {
           </svg>
         </div>
 
-        <div className=" col-span-3 row-span-3 bg-[url('/HomePage_Image.webp')]  md:[clip-path:polygon(0%_0%,150%_0%,100%_480%)] bg-cover max-w-screen"></div>
+        <div className="col-span-3 row-span-3 bg-[url('/HomePage_Image.webp')]  md:[clip-path:polygon(0%_0%,150%_0%,100%_480%)] bg-cover max-w-screen"></div>
 
         <div className="absolute bottom-0 left-0 w-full h-48 bg-gradient-to-t from-primary-black"></div>
         <a href="/#about" aria-label="Down arrow goes to about us page">
@@ -73,22 +76,25 @@ export default function Home() {
             <path
               d="M3 3L13.5 14L24 3"
               stroke="white"
-              stroke-width="5"
-              stroke-linecap="round"
+              strokeWidth="5"
+              strokeLinecap="round"
             />
           </svg>
         </a>
       </div>
-      <div className="md:hidden">
-        <div className="  bg-[url('/HomePage_Image.webp')]  bg-no-repeat  bg-cover relative">
-          <div className="absolute inset-0 bg-black bg-opacity-75 md:hidden"></div>
 
-          <div className="flex-column h-screen relative padding-x pt-56">
-            <img
+      <div className="lg:hidden block">
+        <div className="  bg-[url('/HomePage_Image.webp')]  bg-no-repeat  bg-cover relative">
+          <div className="absolute inset-0 bg-black bg-opacity-75 lg:hidden"></div>
+          <div className="flex-column h-screen relative padding-x pt-[30vh] ">
+            <Image
               src="/MACSLOGOTRANS 2.webp"
-              className="w-64 max-h-full mx-auto"
               alt="MACS logo"
+              width={300}
+              height={300}
+              className="mx-auto"
             />
+
             <p className="md:text-4xl text-2xl text-center mt-4">
               Macquarie Association
               <br /> of Computing Students

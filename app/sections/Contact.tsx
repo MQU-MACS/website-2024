@@ -1,22 +1,27 @@
 "use client";
 
-import React, { FormEvent, useEffect, useState } from "react";
+import React, { FormEvent, useState } from "react";
 import Animation from "@/components/ScrollAnimation";
 
 export default function Contact() {
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
 
+  // Form submission
   async function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
-    // Submit form
-    const formData = new FormData(event.currentTarget);
+    // Clear form
+    event.currentTarget.reset();
 
-    const submitData = new URLSearchParams();
-    submitData.append("form-name", "contact");
-    submitData.append("name", formData.get("name") as string);
-    submitData.append("email", formData.get("email") as string);
-    submitData.append("message", formData.get("message") as string);
+    const formData = new FormData(event.currentTarget);
+    const { name, email, message } = Object.fromEntries(formData.entries());
+
+    const submitData = new URLSearchParams({
+      "form-name": "contact",
+      name: name as string,
+      email: email as string,
+      message: message as string,
+    });
 
     const response = await fetch("/", {
       method: "POST",
@@ -26,6 +31,10 @@ export default function Contact() {
 
     if (response.status === 200) {
       setIsFormSubmitted(true);
+    } else {
+      const errorMessage = await response.text();
+      alert(`Form submission failed: ${errorMessage}`);
+      setIsFormSubmitted(false);
     }
   }
 
@@ -37,13 +46,9 @@ export default function Contact() {
             <h2 className="text-white mb-4 text-4xl italic font-bold text-center">
               Contact <span className="text-primary-blue">Us</span>
             </h2>
-            {isFormSubmitted ? (
-              <div className="text-center">
-                Thank you for submitting the form!
-              </div>
-            ) : (
+            <div className="px-2 md:px-8">
               <form
-                className="space-y-8 px-2 md:px-8"
+                className="space-y-8 "
                 data-netlify="true"
                 method="POST"
                 name="contact"
@@ -95,6 +100,7 @@ export default function Contact() {
                     className="block p-3 w-full text-sm text-primary-black bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 "
                     placeholder="Leave a message"
                     rows={8}
+                    required
                   ></textarea>
                 </div>
                 <div className="mx-auto text-center">
@@ -103,7 +109,16 @@ export default function Contact() {
                   </button>
                 </div>
               </form>
-            )}
+              {isFormSubmitted && (
+                <Animation animationDirection="bottom-to-top">
+                  <div className="text-center border-2 border-green-500 rounded-2xl p-4 mt-8 bg-green-900 text-white">
+                    <p className="text-green-100">
+                      Thank you for submitting the form!
+                    </p>
+                  </div>
+                </Animation>
+              )}
+            </div>
           </div>
         </Animation>
         <p className="text-center w-fit mx-auto rounded-full mb-1">
@@ -112,7 +127,7 @@ export default function Contact() {
         <p className="text-center mb-4 w-fit mx-auto rounded-full text-sm text-slate-200">
           Made by:{" "}
           <a
-            href="https://github.com/peterlqs/MACS"
+            href="https://www.linkedin.com/in/quann"
             className="text-slate-400 hover:text-primary-blue"
           >
             Quan Nguyen (Peter)

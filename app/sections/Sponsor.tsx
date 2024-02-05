@@ -1,5 +1,7 @@
 import Link from "next/link";
+import Image from "next/image";
 import Animation from "@/components/ScrollAnimation";
+
 export default function Sponsor() {
   return (
     <div className="flex flex-col items-center">
@@ -17,20 +19,17 @@ export default function Sponsor() {
         </Animation>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-24 text-center px-2 md:padding-x">
+      <div className="grid lg:grid-cols-2 gap-24 text-center px-2 md:padding-x">
         <div className="relative">
           <div className="absolute inset-0 bg-primary-blue transform translate-x-[-1rem] translate-y-[-1rem] md:translate-x-[-2rem] md:translate-y-[-2rem] rounded-xl "></div>
-          {/* <Animation animationDirection="left-to-right"> */}
-          <div className=" relative flex flex-col items-center bg-white p-8 rounded-xl pb-16 z-10">
+          <div className="relative flex flex-col items-center bg-white p-8 rounded-xl pb-16 z-10">
             <Animation animationDirection="right-to-left">
-              <img
+              <Image
                 src="/Atlassian Logo.webp"
-                className="
-              h-40
-              w-full
-              object-contain
-              "
                 alt="Atlassian Logo"
+                width={400}
+                height={250}
+                objectFit="contain"
               />
             </Animation>
             <Animation animationDirection="right-to-left">
@@ -45,22 +44,18 @@ export default function Sponsor() {
               </p>
             </Animation>
           </div>
-          {/* </Animation> */}
         </div>
 
         <div className="relative">
           <div className="absolute inset-0 bg-primary-blue transform translate-x-[1rem] -translate-y-[-1rem] md:translate-x-[2rem] md:-translate-y-[-2rem] rounded-xl"></div>
-          {/* <Animation animationDirection="right-to-left"> */}
-          <div className=" relative flex flex-col items-center h-full bg-white p-8 rounded-xl pb-16 z-10">
+          <div className="relative flex flex-col items-center h-full bg-white p-8 rounded-xl pb-16 z-10">
             <Animation animationDirection="right-to-left">
-              <img
+              <Image
                 src="/Macquarie Bank Logo.webp"
-                className="
-            h-40
-            w-full
-            object-contain
-            "
                 alt="Macquarie Bank Logo"
+                width={400}
+                height={250}
+                objectFit="contain"
               />
             </Animation>
             <Animation animationDirection="right-to-left">
