@@ -14,7 +14,7 @@ export default function Sponsor() {
         <Animation animationDirection="right-to-left">
           <p className="font-light max-w-prose">
             We sincerely appreciate the generous support of our sponsors, whose
-            contributions make MACS's work possible.
+            contributions make MACS&apos;s work possible.
           </p>
         </Animation>
       </div>
