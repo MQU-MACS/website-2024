@@ -13,6 +13,10 @@ export default function Team() {
 
       <div className="hidden md:block">
         <Timeline></Timeline>
+        <p className="text-white text-base text-center pt-8">
+          If you are interested in getting involved, please talk to any of our
+          friendly executives.
+        </p>
       </div>
 
       <div className="md:hidden">

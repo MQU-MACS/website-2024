@@ -48,23 +48,17 @@ const VerticalTabMenu: React.FC = () => {
         </div>
       </Animation>
 
-      <div className="col-start-2 col-span-7 max-w-full grid-rows-2  ">
+      <div className="col-start-2 col-span-7 max-w-full grid-rows-2  bg-primary-black border-2 rounded-[2.5rem] p-6">
         <Animation animationDirection="left-to-right">
           <div className=" w-full h-full rounded ">
-            <div className="row-start-1 gap-8 grid grid-rows-${numRows} lg:grid-cols-4 md:grid-cols-3 bg-primary-black border-white border-opacity-40 border-4 rounded-[2.5rem] p-6">
+            <div className="row-start-1 gap-8 grid grid-rows-${numRows} lg:grid-cols-4 md:grid-cols-3 ">
               {currentData.map((item, index) => (
                 <div key={index} className="text-center ">
-                  <div className="text-2xl text-primary-blue font-bold">
-                    {item.name}
-                  </div>
-                  <div className=" text-2xl text-white">{item.role}</div>
+                  <div className="text-2xl text-primary-blue">{item.name}</div>
+                  <div className="text-white">{item.role}</div>
                 </div>
               ))}
             </div>
-            <p className="text-white text-base text-center pt-8">
-              If you are interested in getting involved, please talk to any of
-              our friendly executives.
-            </p>
           </div>
         </Animation>
       </div>

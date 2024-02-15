@@ -16,8 +16,8 @@ export default function Home() {
             <img
               src="/MACSLOGOTRANS 2.webp"
               alt="MACS logo"
-              width={350}
-              height={350}
+              width={362}
+              height={100}
             />
 
             <p className="text-4xl pt-4 pb-8 italic tracking-wide">

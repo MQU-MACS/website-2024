@@ -128,7 +128,7 @@ export default function Contact() {
           Made by:{" "}
           <a
             href="https://www.linkedin.com/in/quann"
-            className="text-slate-400 hover:text-primary-blue"
+            className="text-slate-300 hover:text-primary-blue"
           >
             Quan Nguyen (Peter)
           </a>{" "}

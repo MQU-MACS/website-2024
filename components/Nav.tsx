@@ -11,7 +11,7 @@ export default function Nav() {
   };
 
   return (
-    <header className="padding-x fixed z-20 w-full bg-[#12151E]">
+    <header className="padding-x fixed z-20 w-full bg-gradient-to-b from-primary-black ">
       <nav className="flex justify-between items-center max-container h-20">
         <a href="/">
           <img
