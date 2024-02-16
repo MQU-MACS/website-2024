@@ -13,7 +13,7 @@ export default function Home() {
     <main className="bg-primary-black">
       <Nav />
 
-      <section className="">
+      <section id="home" className="">
         <Animation animationDirection="top-to-bottom">
           <Home1 />
         </Animation>

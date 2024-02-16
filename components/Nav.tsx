@@ -11,9 +11,13 @@ export default function Nav() {
   };
 
   return (
-    <header className="padding-x fixed z-20 w-full bg-gradient-to-b from-primary-black ">
+    <header
+      className={`padding-x fixed z-20 w-full ${
+        isNavOpen ? "bg-primary-black" : "bg-gradient-to-b from-primary-black"
+      }`}
+    >
       <nav className="flex justify-between items-center max-container h-20">
-        <a href="/">
+        <a href="/#home">
           <img
             src="/MACSLOGOTRANS 2.webp"
             alt="logo"
@@ -28,7 +32,7 @@ export default function Nav() {
               <li key={item.label}>
                 <a
                   href={item.href}
-                  className="leading-normal text-lg text-white uppercase italic hover:underline"
+                  className="leading-normal text-lg text-white uppercase italic hover:text-primary-blue"
                 >
                   {item.label}
                 </a>
@@ -64,14 +68,14 @@ export default function Nav() {
         <ul
           className={`${
             isNavOpen ? "block" : "hidden"
-          } lg:hidden absolute top-20 left-0 w-full bg-[#12151E] py-4`}
+          } lg:hidden absolute top-20 left-0 w-full bg-primary-black py-4`}
         >
           {navLinks.map((item) => (
             <li key={item.label}>
               <a
                 href={item.href}
                 onClick={toggleNav}
-                className="block text-lg text-white uppercase italic hover:underline padding-x py-2"
+                className="block text-lg text-white uppercase italic hover:text-primary-blue padding-x py-2"
               >
                 {item.label}
               </a>

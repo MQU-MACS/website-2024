@@ -26,7 +26,7 @@ export default function DropdownComponent() {
     <div className="w-full flex flex-col items-center py-12 relative">
       <Animation animationDirection="top-to-bottom">
         <select
-          className="bg-transparent border focus: border-white text-sm rounded-lg focus:bg-primary-black focus:ring-primary-black focus:border-primary-blue block w-full p-2.5"
+          className="appearance-none bg-transparent border focus: border-white text-sm rounded-lg focus:bg-primary-black focus:ring-primary-black focus:border-primary-blue block w-full p-2.5"
           value={selectedYear}
           onChange={handleYearChange}
           aria-label="dropdown"
@@ -41,7 +41,7 @@ export default function DropdownComponent() {
       <div className="py-6">
         {yearData && (
           <Animation animationDirection="top-to-bottom">
-            <div className="grid grid-cols-2 gap-x-4 gap-y-6 text-primary-black bg-primary-black border-white border-opacity-40 border-2 rounded-[2.5rem] p-8">
+            <div className="grid grid-cols-2 gap-x-4 gap-y-6 text-primary-black bg-primary-black border-white border-2 rounded-[2.5rem] p-8">
               {yearData.map((item, index) => (
                 <div key={index}>
                   <p className="font-bold text-primary-blue">{item.name}</p>
