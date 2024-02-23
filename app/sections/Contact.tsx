@@ -128,11 +128,18 @@ export default function Contact() {
           Made by:{" "}
           <a
             href="https://www.linkedin.com/in/quann"
-            className="text-slate-300 hover:text-primary-blue"
+            className="text-slate-400 hover:text-primary-blue"
           >
             Quan Nguyen (Peter)
           </a>{" "}
-          and Noel Gens
+          and{" "}
+          <a
+            href="https://www.linkedin.com/in/noelgens"
+            className="text-slate-400 hover:text-primary-blue"
+          >
+            {" "}
+            Noel Gens{" "}
+          </a>
         </p>
       </div>
 
