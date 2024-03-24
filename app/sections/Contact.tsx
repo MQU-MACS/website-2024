@@ -1,42 +1,11 @@
 "use client";
 
-import React, { FormEvent, useState } from "react";
+import React from "react";
 import Animation from "@/components/ScrollAnimation";
+import { useForm, ValidationError } from "@formspree/react";
 
 export default function Contact() {
-  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
-
-  // Form submission
-  async function onSubmit(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-
-    const formData = new FormData(event.currentTarget);
-    const { name, email, message } = Object.fromEntries(formData.entries());
-
-    // Clear form
-    event.currentTarget.reset();
-
-    const submitData = new URLSearchParams({
-      "form-name": "contact",
-      name: name as string,
-      email: email as string,
-      message: message as string,
-    });
-
-    const response = await fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: submitData,
-    });
-
-    if (response.status === 200) {
-      setIsFormSubmitted(true);
-    } else {
-      const errorMessage = await response.text();
-      alert(`Form submission failed: ${errorMessage}`);
-      setIsFormSubmitted(false);
-    }
-  }
+  const [state, handleSubmit] = useForm("xayrdvpj");
 
   return (
     <div className="relative overflow-hidden mx-auto">
@@ -47,14 +16,7 @@ export default function Contact() {
               Contact <span className="text-primary-blue">Us</span>
             </h2>
             <div className="px-2 md:px-8">
-              <form
-                className="space-y-8 "
-                data-netlify="true"
-                method="POST"
-                name="contact"
-                onSubmit={onSubmit}
-              >
-                <input type="hidden" name="form-name" value="contact"></input>
+              <form className="space-y-8" onSubmit={handleSubmit}>
                 <div>
                   <label
                     htmlFor="name"
@@ -69,6 +31,11 @@ export default function Contact() {
                     className="block p-3 w-full text-sm text-primary-black bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 "
                     placeholder="Enter your name"
                     required
+                  />
+                  <ValidationError
+                    prefix="Name"
+                    field="name"
+                    errors={state.errors}
                   />
                 </div>
                 <div>
@@ -86,6 +53,11 @@ export default function Contact() {
                     placeholder="name@MACS.com"
                     required
                   />
+                  <ValidationError
+                    prefix="Email"
+                    field="email"
+                    errors={state.errors}
+                  />
                 </div>
                 <div className="sm:col-span-2">
                   <label
@@ -102,14 +74,23 @@ export default function Contact() {
                     rows={8}
                     required
                   ></textarea>
+                  <ValidationError
+                    prefix="Message"
+                    field="message"
+                    errors={state.errors}
+                  />
                 </div>
                 <div className="mx-auto text-center">
-                  <button className="w-fit center bg-transparent hover:bg-black hover:text-white  py-2 px-7 border border-white rounded-full italic">
+                  <button
+                    type="submit"
+                    disabled={state.submitting}
+                    className="w-fit center bg-transparent hover:bg-black hover:text-white py-2 px-7 border border-white rounded-full italic"
+                  >
                     Submit
                   </button>
                 </div>
               </form>
-              {isFormSubmitted && (
+              {state.succeeded && (
                 <Animation animationDirection="bottom-to-top">
                   <div className="text-center border-2 border-green-500 rounded-2xl p-4 mt-8 bg-green-900 text-white">
                     <p className="text-green-100">

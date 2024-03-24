@@ -136,8 +136,8 @@ export default function Home() {
                 <path
                   d="M3 3L13.5 14L24 3"
                   stroke="white"
-                  stroke-width="5"
-                  stroke-linecap="round"
+                  strokeWidth="5"
+                  strokeLinecap="round"
                 />
               </svg>
             </a>
