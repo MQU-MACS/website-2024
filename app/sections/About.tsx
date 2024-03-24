@@ -22,20 +22,20 @@ const ContentSection = () => (
 export default function About() {
   return (
     <div className="max-w-full max-h-full max-container">
-      <div className="   grid grid-rows-8 gap-16 md:hidden">
-        <div className="row-start-2">
+      <div className="grid gap-16 md:hidden">
+        <div>
           <Slider slides={imagesData}></Slider>
         </div>
-        <div className="row-start-1">
+        <div>
           <ContentSection />
         </div>
       </div>
 
-      <div className=" grid-cols-2  gap-16  hidden md:grid ">
-        <div className=" col-start-1">
+      <div className="grid-cols-2 gap-16 hidden md:grid">
+        <div className="col-start-1">
           <Slider slides={imagesData}></Slider>
         </div>
-        <div className=" col-start-2">
+        <div className="col-start-2">
           <div className="animate-marquee3">
             <ContentSection />
           </div>
