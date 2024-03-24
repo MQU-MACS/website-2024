@@ -19,7 +19,7 @@ export default function CTA() {
         <div className="relative flex overflow-x-hidden -rotate-3 w-screen max-w-[1920px]">
           <div className="animate-marquee whitespace-nowrap">
             <img
-              src="/marquee 2.webp"
+              src="/marquee2.webp"
               alt="MACS Logos"
               className="max-w-none"
               width={1598}
@@ -29,7 +29,7 @@ export default function CTA() {
 
           <div className="absolute top-0 animate-marquee2 whitespace-nowrap">
             <img
-              src="/marquee 2.webp"
+              src="/marquee2.webp"
               alt="MACS Logos"
               className="max-w-none"
               width={1598}
@@ -72,7 +72,7 @@ export default function CTA() {
         <div className="relative flex overflow-x-hidden -rotate-3 w-screen max-w-[1920px]">
           <div className="animate-marquee whitespace-nowrap">
             <img
-              src="/marquee 2.webp"
+              src="/marquee2.webp"
               alt="MACS Logos"
               className="max-w-none"
               width={1598}
@@ -82,7 +82,7 @@ export default function CTA() {
 
           <div className="absolute top-0 animate-marquee2 whitespace-nowrap">
             <img
-              src="/marquee 2.webp"
+              src="/marquee2.webp"
               alt="MACS Logos"
               className="max-w-none"
               width={1598}

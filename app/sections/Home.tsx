@@ -14,7 +14,7 @@ export default function Home() {
         <div className="col-span-2 row-span-full flex flex-row items-center justify-end px-[10%]">
           <div className="max-w-full max-h-full">
             <img
-              src="/MACSLOGOTRANS 2.webp"
+              src="/MACSLOGOTRANS2.webp"
               alt="MACS logo"
               width={362}
               height={100}

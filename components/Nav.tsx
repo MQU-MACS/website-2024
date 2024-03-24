@@ -19,7 +19,7 @@ export default function Nav() {
       <nav className="flex justify-between items-center max-container h-20">
         <a href="/#home">
           <img
-            src="/MACSLOGOTRANS 2.webp"
+            src="/MACSLOGOTRANS2.webp"
             alt="logo"
             width={130}
             height={35}
