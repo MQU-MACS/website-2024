@@ -87,7 +87,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-black bg-opacity-75 lg:hidden"></div>
           <div className="flex-column h-screen relative padding-x pt-[30vh] ">
             <img
-              src="/MACSLOGOTRANS 2.webp"
+              src="/MACSLOGOTRANS2.webp"
               alt="MACS logo"
               width={300}
               height={300}
