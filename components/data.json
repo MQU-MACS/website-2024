@@ -16,11 +16,12 @@
       {"name":"Muhammad Osama Naeem ", "role":"General Executive"},
       {"name":"Tenzin Shakya  ", "role":"General Executive"},
       {"name":"Nava Choudhury ", "role":"General Executive"},
-      {"name":"Fayyaz Hasan Shaik ", "role":"General Executive"}
-
-
+      {"name":"Fayyaz Hasan Shaik ", "role":"General Executive"},
+      {"name":"Jd De Lange", "role":"General Executive"},
+      {"name":"Daniel Hong", "role":"General Executive"},
+      {"name":"Parva Teli", "role":"General Executive"}
     ],
-   
+
     "2023": [
       { "name": "Zahlia Hamer","role":"President"},
       { "name": "Kayla McLoughlin", "role":"Vice President"},
@@ -85,7 +86,6 @@
         { "name": "Lin Xie", "role":"Social Media Coordinator"},
         { "name": "Jack Moore", "role":"Social Media Coordinator"},
         { "name": "Dai Nguyen", "role":"General Executive"}
-       
       
       ],
       "2018": [
@@ -110,7 +110,6 @@
         { "name": "Matthew Yeatman", "role":"Cofounding Team Member"}
         
       ]
-     
 
     
   }
