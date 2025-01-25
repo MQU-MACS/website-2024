@@ -41,7 +41,7 @@ export default function CTA() {
           <Animation animationDirection="right-to-left">
             <h2 className="text-4xl italic font-bold mb-4">
               Become one of our{" "}
-              <span className="text-primary-blue">6.000+</span> members!
+              <span className="text-primary-blue">6,000+</span> members!
             </h2>
           </Animation>
           <Animation animationDirection="right-to-left">
