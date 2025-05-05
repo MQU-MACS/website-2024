@@ -3,17 +3,7 @@ import React, { useState } from "react";
 import data from "./data.json";
 import Animation from "@/components/ScrollAnimation";
 const VerticalTabMenu: React.FC = () => {
-  const years = [
-    "2024",
-    "2023",
-    "2022",
-    "2021 S2",
-    "2021 S1",
-    "2020",
-    "2019",
-    "2018",
-    "2017",
-  ];
+  const years = Object.keys(data);
   const [currentYear, setCurrentYear] = useState<string>(years[0]);
 
   const handleYearClick = (year: string) => {
