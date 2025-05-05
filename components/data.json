@@ -1,4 +1,26 @@
 {
+    "2025": [
+      { "name": "Jakob Hogan", "role": "President" },
+      { "name": "Joey Bechara", "role": "Vice President" },
+      { "name": "Neil Quisumbing", "role": "Treasurer" },
+      { "name": "Yvonne Smith", "role": "Secretary" },
+      { "name": "Rishabh Shetty", "role": "Sponsorship Director" },
+      { "name": "Bianca Lubke", "role": "Social Media Manager" },
+      { "name": "Jahin Zawad", "role": "Social Media Team"},
+      { "name": "Muhammad Rahman", "role": "Social Media Team"},
+      { "name": "Karl Holzmann", "role": "Operations Team Lead" },
+      { "name": "Aaron Minhas", "role": "Operations Team" },
+      { "name": "Kabir Acharya", "role": "Operations Team" },
+      { "name": "Gianam Luong", "role": "Operations Team" },
+      { "name": "Caleb Cruz", "role": "General Executive" },
+      { "name": "Patrick Massasso", "role": "General Executive" },
+      { "name": "Harry Yoo", "role": "General Executive" },
+      { "name": "Leon Tomy", "role": "General Executive" },
+      { "name": "Yasmin Lee", "role": "General Executive" },
+      { "name": "Thanhtra Tran", "role": "General Executive" },
+      { "name": "Tenzin Shakya", "role":"General Executive"}
+    ],
+
     "2024": [
       { "name": "Zahlia Hamer","role":"President"},
       { "name": "Yasmin Lee", "role":"Vice President"},
@@ -14,7 +36,7 @@
       {"name":"Caleb Cruz", "role":"General Executive"},
       {"name":"Yvonne Smith ", "role":"General Executive"},
       {"name":"Muhammad Osama Naeem ", "role":"General Executive"},
-      {"name":"Tenzin Shakya  ", "role":"General Executive"},
+      {"name":"Tenzin Shakya", "role":"General Executive"},
       {"name":"Fayyaz Hasan Shaik ", "role":"General Executive"},
       {"name":"Jd De Lange", "role":"General Executive"},
       {"name":"Daniel Hong", "role":"General Executive"},
