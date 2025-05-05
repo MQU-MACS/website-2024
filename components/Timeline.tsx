@@ -89,7 +89,7 @@ const VerticalTabMenu: React.FC = () => {
             {years.map((year, index) => (
               <div
                 key={index}
-                ref={el => yearRefs.current[index] = el}
+                ref={(el) => { yearRefs.current[index] = el; }}
                 className="cursor-pointer flex justify-center items-center"
                 onClick={() => handleYearClick(year)}
               >
