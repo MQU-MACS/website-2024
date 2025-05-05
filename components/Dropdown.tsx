@@ -2,7 +2,7 @@
 import React, { useState, ChangeEvent } from "react";
 import data from "./data.json";
 import Animation from "@/components/ScrollAnimation";
-const years = Object.keys(data);
+const years = Object.keys(data).sort().reverse();
 
 export default function DropdownComponent() {
   const [selectedYear, setSelectedYear] = useState("2023");
